@@ -34,7 +34,7 @@
             background: #e5e7e9;
             padding: 0%;
             display: grid;
-            /* gap: 15px; */
+            gap: 15px;
             grid-template-columns: 1 fr 1fr 1fr;
             grid-template-rows: 200px 1fr 1fr 100px;
             grid-template-areas:
@@ -50,39 +50,39 @@
         .title {
             grid-area: title;
             background: blue;
-            margin: 10px;
+            /* margin: 10px; */
         }
 
         .search {
             grid-area: search;
             background: blue;
-            margin: 10px;
+            /* margin: 10px; */
         }
 
         .main {
             grid-area: main;
             background: blue;
-            margin-left: 10px;
-            margin-right: 10px;
+            /* margin-left: 10px;
+            margin-right: 10px; */
         }
 
         .add1 {
             grid-area: add1;
             background: blue;
-            margin: 10px;
+            /* margin: 10px; */
         }
 
         .add2 {
             grid-area: add2;
             background: blue;
-            margin: 10px;
+            /* margin: 10px; */
         }
 
         .footer {
             grid-area: footer;
             display: grid;
             background: blue;
-            margin: 10px;
+            /* margin: 10px; */
 
         }
 
@@ -93,13 +93,46 @@
             /* height: 100%;
             width: 100%; */
             background: blue;
-            margin: 10px;
+            /* margin: 10px; */
         }
 
         .logout {
             grid-area: logout;
             background: blue;
-            margin: 10px;
+            /* margin: 10px; */
+        }
+
+        @media (max-width: 768px) {
+            .search,
+            .add1,
+            .add2,
+            .footer2,
+            .logout {
+                display: none;
+            }
+            .wrapper {
+            background: #e5e7e9;
+            padding: 0%;
+            display: grid;
+            gap: 15px;
+            grid-template-columns: 1 fr 1fr;
+            grid-template-rows: 200px 1fr 1fr 100px;
+            grid-template-areas:
+                "title title"
+                "main main"
+                "main main"
+                "footer "
+
+            ;
+        }
+
+
+        .title {
+            grid-area: title;
+            background: blue;
+            /* margin: 10px; */
+        }
+
         }
     </style>
 </head>
