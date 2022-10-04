@@ -1,3 +1,3 @@
 # FrontEnd
 
-- [Test](https://oleksiykharkiv.github.io/FrontEnd/Test_29_09_2022.html) 
+- [Inbox](https://github.com/OleksiyKharkiv/FrontEnd/blob/master/Diplom_FE_24_09_2022.html) 
