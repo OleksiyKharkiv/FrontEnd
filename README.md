@@ -1,3 +1,3 @@
-# FrontEnd test
+# FrontEnd Khudoshyn Oleksiy
 
-- [Inbox](https://oleksiykharkiv.github.io/FrontEnd/Test_04_10_2022.html) 
+- [Dashboard](https://oleksiykharkiv.github.io/FrontEnd/Diplom_FE_24_09_2022.html) 
