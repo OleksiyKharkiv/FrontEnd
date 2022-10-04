@@ -57,9 +57,7 @@
                 "nav"
                 "menu2"
                 "button2"
-
             ;
-            align-items: top;
             justify-items: center;
         }
 
@@ -72,17 +70,13 @@
             grid-template-areas:
                 "button__logo button__text";
             width: 200px;
-            margin: 0px;
+            margin-bottom: 80px;
         }
 
         .button__logo {
             grid-area: button__logo;
             background: transparent;
             border: none;
-            /* padding: 0%;
-            margin: 0%; */
-            /* height: 50%;
-            width: 50%; */
             cursor: pointer;
         }
 
@@ -142,11 +136,12 @@
 
         .nav__item--active {
             border-color: #000;
-            text-decoration: none;
+            text-decoration: none
         }
 
         .nav__item:not(:last-child) {
             margin-bottom: 1rem;
+            color: #989898;
         }
 
         .nav__text {
@@ -156,7 +151,9 @@
         }
 
         .icon {
+            grid-area: icon;
             font-size: 1.25rem;
+            color: #989898;
         }
 
 
@@ -171,15 +168,19 @@
 
         .nav__list2 {
             display: grid;
-            grid-template-rows: repeat(4 1fr);
             padding: 0%;
+
         }
 
         .nav__link2 {
+            display: grid;
+            grid-template-columns: (1fr 4fr 1fr);
             text-decoration: none;
             font-size: 1.1rem;
             color: #989898;
             width: 100%;
+            grid-template-areas:
+                "icon nav__item2 button3";
             /* padding-left: 10px; */
 
         }
@@ -192,6 +193,7 @@
 
 
         .nav__item2 {
+            grid-area: nav__it;
             border-left: 2px solid transparent;
             padding: 0 0 0 0;
 
@@ -206,6 +208,7 @@
         }
 
         .nav__text2 {
+            grid-area: nav__text2;
             text-decoration: none;
             marker: none;
             font-size: 1rem;
@@ -213,6 +216,8 @@
 
         .icon {
             font-size: 1.25rem;
+            align-items: baseline;
+            color: #a3a6af;
         }
 
 
@@ -232,6 +237,7 @@
         }
 
         .button3 {
+            grid-area: button3;
             font-size: 12px;
             border-radius: 20%;
             border: 2px solid #e5e7e9;
@@ -317,6 +323,11 @@
                 "contact"
             ;
             justify-items: center;
+            overflow-y: scroll;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
         }
 
         .title {
@@ -443,6 +454,10 @@
         .name__sms {
             font-size: small;
             color: #2c2e2f;
+            height: 16px;
+            width: 120px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .image,
@@ -466,8 +481,7 @@
 
         img {
             object-fit: cover;
-            /* width: 100%;
-            height: 100%; */
+
         }
 
         .online {
@@ -522,19 +536,58 @@
         }
 
         .chatActive {
+            display: grid;
             grid-area: chatActive;
             border-bottom: 1px solid #e5e7e9;
+            grid-template-columns: 4fr 4fr 30px 30px;
             width: 100%;
             height: 100%;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .input2 {
+            display: grid;
+            grid-template-columns: 6fr 1fr;
+            border: 1px solid #e5e7e9;
+            border-radius: 3%;
+            height: 35%;
+            border-bottom: 1px solid #e5e7e9;
+            align-items: center;
+            background: #f3f5f7;
 
         }
 
         .chatMess {
             grid-area: chatMess;
+            border-bottom: 1px solid #e5e7e9;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #f3f5f7, #ffffff);
+            padding: 50px;
         }
 
         .writeMess {
             grid-area: writeMess;
+            border-top: 1px solid #e5e7e9;
+            width: 100%;
+            height: 100%;
+        }
+
+        .input {
+            border: none;
+            width: 100%;
+            height: 100%;
+            padding-left: 30px;
+            padding-top: 3%;
+            background: #f3f5f7;
+
+        }
+
+        input {
+            width: 80%;
+            border: none;
         }
 
         .addmenu {
@@ -548,25 +601,47 @@
                 "buttonMedium"
                 "buttonBottom"
             ;
-            align-items: center;
             justify-items: center;
 
         }
 
         .buttonTop {
             grid-area: buttonTop;
-            margin-right: 40px;
+            align-items: center;
+            justify-items: center;
         }
 
         .buttonMedium {
             grid-area: buttonMedium;
-            margin-top: 450px;
-            margin-right: 40px;
+            margin-top: 580px;
+            justify-items: center;
         }
 
         .buttonBottom {
             grid-area: buttonBottom;
-            margin-right: 40px;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .button10 {
+            /* grid-area: button10; */
+            font-size: 12px;
+            border-radius: 20%;
+            border: 2px solid #e5e7e9;
+            /* height: 30px;
+            width: 30px; */
+            cursor: pointer;
+            align-items: center;
+            padding-right: 5px;
+        }
+
+        span {
+            border: none;
+            width: 100%;
+            height: 100%;
+            justify-items: center;
+            align-items: center;
+
         }
 
         @media (max-width: 768px) {
@@ -622,12 +697,10 @@
             </figure>
             <nav>
                 <ul class="nav__list">
-                    <li class="nav__item nav__item--active">
+                    <li class="nav__item">
                         <a class="nav__link nav__link--active" href="">
                             <span class="icon">
-                                <i class="lab la-discourse">
-
-                                </i>
+                                <img src="https://img.icons8.com/material-outlined/24/000000/sheets.png" />
                             </span>
                             <span class="nav__text">
                                 Dashboard
@@ -638,9 +711,7 @@
                     <li class="nav__item">
                         <a class="nav__link" href="">
                             <span class="icon">
-                                <i class="lab la-discourse">
-
-                                </i>
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/futures.png" />
                             </span>
                             <span class="nav__text">
                                 Statistic
@@ -651,9 +722,7 @@
                     <li class="nav__item">
                         <a class="nav__link" href="">
                             <span class="icon">
-                                <i class="lab la-discourse">
-
-                                </i>
+                                <img src="https://img.icons8.com/ios/25/000000/speech-bubble--v1.png" />
                             </span>
                             <span class="nav__text">
                                 Support
@@ -661,12 +730,10 @@
                         </a>
 
                     </li>
-                    <li class="nav__item">
+                    <li class="nav__item nav__item--active">
                         <a class="nav__link" href="">
                             <span class="icon">
-                                <i class="lab la-discourse">
-
-                                </i>
+                                <img src="https://img.icons8.com/ios-filled/25/000000/inbox.png" />
                             </span>
                             <span class="nav__text">
                                 Inbox
@@ -677,9 +744,7 @@
                     <li class="nav__item">
                         <a class="nav__link" href="">
                             <span class="icon">
-                                <i class="lab la-discourse">
-
-                                </i>
+                                <img src="https://img.icons8.com/windows/25/000000/rocket.png" />
                             </span>
                             <span class="nav__text">
                                 Goals
@@ -690,9 +755,7 @@
                     <li class="nav__item">
                         <a class="nav__link" href="">
                             <span class="icon">
-                                <i class="lab la-discourse">
-
-                                </i>
+                                <img src="https://img.icons8.com/glyph-neue/25/000000/link.png" />
                             </span>
                             <span class="nav__text">
                                 Links
@@ -796,19 +859,19 @@
             <div class="item">
                 <div class="image">
                     <figure class="avatar">
-                        <img src="https://via.placeholder.com/80" alt="">
+                        <img src="https://img.icons8.com/color/48/000000/user-male-skin-type-3.png" />
                         <div class="online"></div>
                     </figure>
                 </div>
                 <div class="name">
                     <div class="name__name">
-                        <b> Ivan Ivanov</b>
+                        <b> Michael.B</b>
                     </div>
                     <div class="name__role">
-                        Manager
+                        Project manager
                     </div>
                     <div class="name__sms">
-                        Hello!
+                        Sent you the file
                     </div>
                 </div>
                 <div class="indicator">
@@ -818,19 +881,19 @@
             <div class="item">
                 <div class="image">
                     <figure class="avatar">
-                        <img src="https://via.placeholder.com/80" alt="">
+                        <img src="https://img.icons8.com/color/48/000000/user-female-skin-type-3.png" />
                         <div class="online"></div>
                     </figure>
                 </div>
                 <div class="name">
                     <div class="name__name">
-                        <b> Ivan Ivanov</b>
+                        <b> Katie.W</b>
                     </div>
                     <div class="name__role">
-                        Manager
+                        Middle designer
                     </div>
                     <div class="name__sms">
-                        Hello!
+                        See you tommorow...
                     </div>
                 </div>
                 <div class="indicator">
@@ -840,8 +903,52 @@
             <div class="item">
                 <div class="image">
                     <figure class="avatar">
+                        <img src="https://img.icons8.com/color/48/000000/user-male-skin-type-5.png" />
+                        <!-- <div class="online"></div> -->
+                    </figure>
+                </div>
+                <div class="name">
+                    <div class="name__name">
+                        <b> Arnold.J</b>
+                    </div>
+                    <div class="name__role">
+                        UI designer
+                    </div>
+                    <div class="name__sms">
+                        Hi! I checked the layout
+                    </div>
+                </div>
+                <!-- <div class="indicator">
+                    2
+                </div> -->
+            </div>
+            <div class="item">
+                <div class="image">
+                    <figure class="avatar">
+                        <img src="https://img.icons8.com/color/48/000000/user-female-skin-type-4.png" />
+                        <!-- <div class="online"></div> -->
+                    </figure>
+                </div>
+                <div class="name">
+                    <div class="name__name">
+                        <b> Fannie.K</b>
+                    </div>
+                    <div class="name__role">
+                        HR manager
+                    </div>
+                    <div class="name__sms">
+                        Okay!
+                    </div>
+                </div>
+                <!-- <div class="indicator">
+                    2
+                </div> -->
+            </div>
+            <div class="item">
+                <div class="image">
+                    <figure class="avatar">
                         <img src="https://via.placeholder.com/80" alt="">
-                        <div class="online"></div>
+                        <!-- <div class="online"></div> -->
                     </figure>
                 </div>
                 <div class="name">
@@ -863,7 +970,7 @@
                 <div class="image">
                     <figure class="avatar">
                         <img src="https://via.placeholder.com/80" alt="">
-                        <div class="online"></div>
+                        <!-- <div class="online"></div> -->
                     </figure>
                 </div>
                 <div class="name">
@@ -885,7 +992,7 @@
                 <div class="image">
                     <figure class="avatar">
                         <img src="https://via.placeholder.com/80" alt="">
-                        <div class="online"></div>
+                        <!-- <div class="online"></div> -->
                     </figure>
                 </div>
                 <div class="name">
@@ -907,8 +1014,8 @@
                 <div class="image">
                     <figure class="avatar">
                         <img src="https://via.placeholder.com/80" alt="">
-                        <div class="online"></div>
-                    </figure>
+                    
+                    </figure> 
                 </div>
                 <div class="name">
                     <div class="name__name">
@@ -925,6 +1032,28 @@
                     2
                 </div> -->
             </div>
+            <div class="item">
+                <div class="image">
+                    <figure class="avatar">
+                        <img src="https://via.placeholder.com/80" alt="">
+                        <!-- <div class="online"></div> -->
+                    </figure>
+                </div>
+                <div class="name">
+                    <div class="name__name">
+                        <b> Ivan Ivanov</b>
+                    </div>
+                    <div class="name__role">
+                        Manager
+                    </div>
+                    <div class="name__sms">
+                        Hello!
+                    </div>
+                </div>
+                <!-- <div class="indicator">
+                    2
+                </div> -->
+            </div> -->
 
 
         </div>
@@ -934,13 +1063,13 @@
                 <div class="item__online">
                     <div class="image">
                         <figure class="avatar">
-                            <img src="https://via.placeholder.com/80" alt="">
+                            <img src="https://img.icons8.com/color/48/000000/user-male-skin-type-3.png" />
                             <div class="online"></div>
                         </figure>
                     </div>
                     <div class="name">
                         <div class="name__name">
-                            <b> Ivan Ivanov</b>
+                            <b> Michael.B</b>
                         </div>
                         <div class="name__role">
                             Online
@@ -949,32 +1078,66 @@
                     </div>
 
                 </div>
+                <div class="input2">
+                    <input type="text" placeholder="Search..." />
+                    <button10>
+                        <img src="https://img.icons8.com/ios-glyphs/20/000000/search--v1.png" />
+                    </button10>
+                </div>
+                <div class="button10">
+                    <img  src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/25/000000/external-mic-personal-computer-tanah-basah-basic-outline-tanah-basah.png" />
+                </div>
+                <div class="button10">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/webcam.png"/>
+                </div>
             </section>
             <div class="chatMess">
-                <p onclick="toggleMenu()">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint placeat repudiandae amet.
-                    Earum impedit qui reprehenderit! Harum ad vitae illo saepe, suscipit ex deleniti veritatis alias.
-                    Aut optio voluptatibus aliquam.
-                </p>
+                <time onclick="toggleMenu()">
+                    July 29, Monday
+                </time>
                 <p class="burger" onclick="toggleMenu()">
-                    показать/скрыть
+                   ................................................... Hello!
                 </p>
             </div>
-            <div class="writeMess">
-                Nu sho ty tam
+            <div class="input">
+                <input type="text" placeholder="Write a message..." />
+                <button>
+                    <img src="https://img.icons8.com/ios/15/000000/picture.png" />
+                </button>
+                <button>
+                    <img
+                        src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/15/000000/external-mic-personal-computer-tanah-basah-basic-outline-tanah-basah.png" />
+                </button>
+                <button>
+                    <img src="https://img.icons8.com/small/14/000000/filled-sent.png" />
+                </button>
+
+
             </div>
         </div>
         <div class="addmenu">
             <div class="buttonTop">
-                <button class="button3">..</button>
+                <button class="button10">
+                    <img src="https://img.icons8.com/metro/20/000000/more.png" />
+                </button>
             </div>
             <div class="buttonMedium">
-                <button class="button3">!</button>
+                <button class="button10">
+                    <span>
+                        <img src="https://img.icons8.com/material-outlined/25/000000/box-important--v1.png" />
+                    </span>
+                </button>
                 <p> </p>
-                <button class="button3">?</button>
+                <button class="button10">
+                    <img
+                        src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/25/000000/external-mute-social-media-interface-anggara-basic-outline-anggara-putra.png" />
+                </button>
             </div>
             <div class="buttonBottom">
-                <button class="button3">X</button>
+                <button class="button10">
+                    <img
+                        src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/25/000000/external-trash-essentials-tanah-basah-basic-outline-tanah-basah-3.png" />
+                </button>
             </div>
         </div>
 
