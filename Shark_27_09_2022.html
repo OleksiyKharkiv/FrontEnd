@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,
+    body,
+    .wrapper {
+        height: 100%;
+    }
+
+    body {
+        margin: 0%;
+        background: lightgray;
+
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 200px 300px auto 100px;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "aside inbox chat panel";
+    }
+
+    aside {
+        background: lightblue;
+        grid-area: aside;
+    }
+
+    .inbox {
+        background: coral;
+        grid-area: inbox;
+    }
+
+    input {
+        border: none;
+        font-size: 1rem;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    input:fokus {
+        outline: none;
+    }
+
+    input::placeholder {
+        color: lightgrey;
+    }
+
+    .item {
+        background: f3f5f7;
+        width: 300px;
+        aspect-ratio: 3/1;
+        display: grid;
+        grid-template-columns: 2fr 6fr 2fr;
+        padding: 10px;
+        gap: 30px;
+        border-radius: 18px;
+
+
+    }
+
+    p {
+        background: lightblue;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+
+    }
+
+    .image,
+    .name,
+    .indicator {
+        display: grid;
+        align-items: center;
+
+    }
+
+    .avatar {
+        width: 80px;
+        /* aspect-ratio: 1; */
+        height: 80px;
+        position: relative;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .online {
+        background: lightgreen;
+        width: 15px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 3px solid white;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+    }
+</style>
+
+<body>
+    <!-- <input type="text" placeholder="Write a message">
+    <div class="wrapper">
+        <aside></aside>
+        <div class="inside"></div>
+
+    </div> -->
+    <div class="item">
+        <div class="image">
+            <figure class="avatar">
+                <img src="https://via.placeholder.com/80" alt="">
+                <div class="online"></div>
+            </figure>
+        </div>
+        <div class="name">
+            <p> 
+                Ivan Ivanov lhngjhgkjvkjfjfgklhlkghjkhjgjkh
+            </p>
+        </div>
+        <div class="indicator">
+
+        </div>
+    </div>
+</body>
+
+</html>

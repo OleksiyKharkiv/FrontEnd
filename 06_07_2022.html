@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            border: 2px solid grey;
+            border-radius: 8px;
+            padding: 20px;
+            transition: 0.5s ease-out;
+        }
+
+        .card__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .card__avatar {
+            width: 48px;
+            height: 48px;
+
+        }
+
+        .card__message {
+            font-size: 1.5rem;
+
+        }
+
+        .card__message--green {
+            border-bottom: 1px solid green;
+
+        }
+
+        .card__date {
+            text-align: right;
+            color: gray;
+        }
+        .card:not(:last-child){
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            background: green;
+        }
+    </style>
+
+</head>
+
+<!-- Блок__Элемент__Модификатор -->
+
+<body>
+    <!-- блок сообщения -->
+    <div class="card">
+        <div class="card__header">
+            <h2 class="card__title">
+                Ivan Ivanov
+            </h2>
+            <img class="card__avatar" src="https://via.placeholder.com/48
+            " alt="">
+            <p class class="card__message card--green">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit inventore aliquid vel architecto, itaque officiis, totam odio repellendus maiores sit aspernatur non magnam nesciunt quidem.
+
+            </p>
+            <p class="card date">
+                01/01/2000
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="card__header">
+            <h2 class="card__title">
+                Ivan Ivanov
+            </h2>
+            <img class="card__avatar" src="https://via.placeholder.com/48
+            " alt="">
+            <p class class="card__message card--green">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit inventore aliquid vel architecto, itaque officiis, totam odio repellendus maiores sit aspernatur non magnam nesciunt quidem.
+
+            </p>
+            <p class="card date">
+                01/01/2000
+
+            </p>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="card__header">
+            <h2 class="card__title">
+                Ivan Ivanov
+            </h2>
+            <img class="card__avatar" src="https://via.placeholder.com/48
+            " alt="">
+            <p class class="card__message card--green">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit inventore aliquid vel architecto, itaque officiis, totam odio repellendus maiores sit aspernatur non magnam nesciunt quidem.
+
+            </p>
+            <p class="card date">
+                01/01/2000
+
+            </p>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

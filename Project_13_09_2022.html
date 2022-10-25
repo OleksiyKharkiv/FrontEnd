@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo Project</title>
+
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+        body {
+            height: 100%;
+            margin: 70px;
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            flex-direction: row;
+            background: rgb(141, 146, 167);
+
+        }
+
+        .sidebar {
+            position: fixed;
+            flex: 1;
+            left: 0;
+            top: 0;
+            background: #f5f5f5;
+            width: 250px;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            /* flex: 3; */
+            margin: 50px;
+            left: 250;
+            top: 0;
+            background: #f5f5f5;
+            width: 500px;
+            height: 100%;
+            display: flex;
+            /* justify-content: space-between; */
+            flex-direction: column;
+            /* align-items: center; */
+            padding: 3rem 0;
+            box-sizing: border-box;
+
+        }
+
+        .sidebar2 {
+            right: 0;
+            background: #f5f5f5;
+            width: 500px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 0;
+            /* box-sizing: border-box; */
+            padding: 2rem;
+        }
+
+        .timeline {
+            flex: 2;
+            right: 0;
+            bottom: 0;
+            background: #f5f5f5;
+            width: 400px;
+            display: flex;
+            padding: 1, 5rem 0;
+            box-sizing: border-box;
+
+        }
+
+        .calendar {
+            flex: 1;
+            /* position: fixed; */
+            right: 0;
+            top: 0;
+            background: #f5f5f5;
+            width: 500px;
+            /* height: 100%; */
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 0;
+            box-sizing: border-box;
+        }
+
+        .calendar__item {
+            list-style: none;
+            width: calc(100%/7);
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+        }
+
+        .calendar__item--bold {
+            font-weight: 600;
+        }
+
+        .calendar__item--grey {
+            color: grey;
+        }
+
+        .calendar__item--active {
+            background: black;
+            color: white;
+        }
+
+        .calendar__item--small {
+            font-size: .75rem;
+        }
+
+        .calendar__item:NOT(.calendar__item--bold):hover {
+            background: rgb(228, 228, 228);
+            cursor: pointer;
+        }
+
+        .nav {
+            width: 100%;
+        }
+
+        .button {
+            background: none;
+            border: none;
+            color: grey;
+            font-size: 1rem;
+            cursor: pointer;
+
+        }
+
+        .nav__list {
+            margin: 0;
+            list-style: none;
+            padding: 0;
+
+        }
+
+        .nav__link {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #989898;
+
+        }
+
+        .nav__link--active {
+            color: #000;
+        }
+
+        .nav__item {
+            border-left: 2px solid transparent;
+            padding: 0, 5rem 0 0, 5rem 25%;
+
+        }
+
+        .nav__item--active {
+            border-color: #000;
+        }
+
+        .nav__item:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .icon {
+            font-size: 1.25rem;
+        }
+
+        .container {
+            height: 450px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .timeline__line {
+            height: 2px;
+            background: rgb(215, 215, 215);
+            width: 60%;
+        }
+
+        .lesson {
+            background: orange;
+            height: 40px;
+            position: absolute;
+            left: 20%;
+        }
+
+        .lesson--9h {
+            top: 0;
+        }
+
+        .lesson--930h {
+            top: calc (450px/17);
+        }
+
+        .lesson--10h {
+            top: calc (450px/17*2);
+        }
+
+        /* секция для мобильных устройств */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-250px);
+                transition: all 0.5s ease-out;
+            }
+
+            .sidebar--open {
+                transform: none;
+            }
+            .sidebar2 {
+                transform: translateX(+600px);
+                transition: all 0.5s ease-out;
+            }
+
+            .sidebar2--open {
+                transform: none;
+            }
+            .main {
+                margin: 50px 50px 50px 250px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <aside class="sidebar">
+        <figure class="picture">
+            <img class="Logo" src="https://img.icons8.com/fluency/48/000000/query-inner-join.png" alt="">
+            <h3>memo</h3>
+        </figure>
+        <nav>
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active">
+                    <a class="nav__link nav__link--active" href="">
+                        <span class="icon">
+                            <i class="lab la-discourse">
+
+                            </i>
+                        </span>
+                        <span class="nav__text">
+                            Courses
+                        </span>
+                    </a>
+
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">
+                        <span class="icon">
+                            <i class="lab la-discourse">
+
+                            </i>
+                        </span>
+                        <span class="nav__text">
+                            Payment
+                        </span>
+                    </a>
+
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">
+                        <span class="icon">
+                            <i class="lab la-discourse">
+
+                            </i>
+                        </span>
+                        <span class="nav__text">
+                            Chat
+                        </span>
+                    </a>
+
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">
+                        <span class="icon">
+                            <i class="lab la-discourse">
+
+                            </i>
+                        </span>
+                        <span class="nav__text">
+                            Groups
+                        </span>
+                    </a>
+
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">
+                        <span class="icon">
+                            <i class="lab la-discourse">
+
+                            </i>
+                        </span>
+                        <span class="nav__text">
+                            Students
+                        </span>
+                    </a>
+
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">
+                        <span class="icon">
+                            <i class="lab la-discourse">
+
+                            </i>
+                        </span>
+                        <span class="nav__text">
+                            Support
+                        </span>
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+        <button>
+            <!-- <span class="icon" -->
+            <i class="las la-sign-out-alt"></i>
+
+            Log out
+        </button>
+    </aside>
+    <main>
+        <section class="content">
+            <p onclick="toggleMenu()">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint placeat repudiandae amet.
+                Earum impedit qui reprehenderit! Harum ad vitae illo saepe, suscipit ex deleniti veritatis alias.
+                Aut optio voluptatibus aliquam.
+            </p>
+            <p class="burger" onclick="toggleMenu()">
+                показать/скрыть
+            </p>
+        </section>
+    </main>
+    <div class="sidebar2">
+        <section class="calendar">
+            <button id="btnPrev" type="button">Предыдущий</button>
+            <button id="btnNext" type="button">Следующий</button>
+            <div id="divCal"></div>
+            <script src="js/index.js"></script>
+        </section>
+        <section class="timeline">
+            <h2>
+                Upcoming
+            </h2>
+            <div class="container">
+                <div class lesson lesson--9h>
+
+                </div>
+                <!-- <div class="lesson">
+                    lesson
+                </div> -->
+                <div class="timeline">
+                    <div class="timeline__time">10:00</div>
+                    <div class="timeline__line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__time">11:00</div>
+                    <div class="timeline__line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__time">12:00</div>
+                    <div class="timeline__line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__time">13:00</div>
+                    <div class="timeline__line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__time">14:00</div>
+                    <div class="timeline__line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__time">15:00</div>
+                    <div class="timeline__line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__time">16:00</div>
+                    <div class="timeline__line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__time">17:00</div>
+                    <div class="timeline__line"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function toggleMenu() {
+            var sidebar = document.querySelector('.sidebar');
+
+            sidebar.classList.toggle('sidebar--open');
+        }
+
+    </script>
+    <script>
+        var Cal = function (divId) {
+            //Сохраняем идентификатор div
+            this.divId = divId;
+            // Дни недели с понедельника
+            this.DaysOfWeek = [
+                'Пн',
+                'Вт',
+                'Ср',
+                'Чт',
+                'Пт',
+                'Сб',
+                'Вс'
+            ];
+            // Месяцы начиная с января
+            this.Months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+            //Устанавливаем текущий месяц, год
+            var d = new Date();
+            this.currMonth = d.getMonth();
+            this.currYear = d.getFullYear();
+            this.currDay = d.getDate();
+        };
+        // Переход к следующему месяцу
+        Cal.prototype.nextMonth = function () {
+            if (this.currMonth == 11) {
+                this.currMonth = 0;
+                this.currYear = this.currYear + 1;
+            }
+            else {
+                this.currMonth = this.currMonth + 1;
+            }
+            this.showcurr();
+        };
+        // Переход к предыдущему месяцу
+        Cal.prototype.previousMonth = function () {
+            if (this.currMonth == 0) {
+                this.currMonth = 11;
+                this.currYear = this.currYear - 1;
+            }
+            else {
+                this.currMonth = this.currMonth - 1;
+            }
+            this.showcurr();
+        };
+        // Показать текущий месяц
+        Cal.prototype.showcurr = function () {
+            this.showMonth(this.currYear, this.currMonth);
+        };
+        // Показать месяц (год, месяц)
+        Cal.prototype.showMonth = function (y, m) {
+            var d = new Date()
+                // Первый день недели в выбранном месяце 
+                , firstDayOfMonth = new Date(y, m, 7).getDay()
+                // Последний день выбранного месяца
+                , lastDateOfMonth = new Date(y, m + 1, 0).getDate()
+                // Последний день предыдущего месяца
+                , lastDayOfLastMonth = m == 0 ? new Date(y - 1, 11, 0).getDate() : new Date(y, m, 0).getDate();
+            var html = '<table>';
+            // Запись выбранного месяца и года
+            html += '<thead><tr>';
+            html += '<td colspan="7">' + this.Months[m] + ' ' + y + '</td>';
+            html += '</tr></thead>';
+            // заголовок дней недели
+            html += '<tr class="days">';
+            for (var i = 0; i < this.DaysOfWeek.length; i++) {
+                html += '<td>' + this.DaysOfWeek[i] + '</td>';
+            }
+            html += '</tr>';
+            // Записываем дни
+            var i = 1;
+            do {
+                var dow = new Date(y, m, i).getDay();
+                // Начать новую строку в понедельник
+                if (dow == 1) {
+                    html += '<tr>';
+                }
+                // Если первый день недели не понедельник показать последние дни предыдущего месяца
+                else if (i == 1) {
+                    html += '<tr>';
+                    var k = lastDayOfLastMonth - firstDayOfMonth + 1;
+                    for (var j = 0; j < firstDayOfMonth; j++) {
+                        html += '<td class="not-current">' + k + '</td>';
+                        k++;
+                    }
+                }
+                // Записываем текущий день в цикл
+                var chk = new Date();
+                var chkY = chk.getFullYear();
+                var chkM = chk.getMonth();
+                if (chkY == this.currYear && chkM == this.currMonth && i == this.currDay) {
+                    html += '<td class="today">' + i + '</td>';
+                } else {
+                    html += '<td class="normal">' + i + '</td>';
+                }
+                // закрыть строку в воскресенье
+                if (dow == 0) {
+                    html += '</tr>';
+                }
+                // Если последний день месяца не воскресенье, показать первые дни следующего месяца
+                else if (i == lastDateOfMonth) {
+                    var k = 1;
+                    for (dow; dow < 7; dow++) {
+                        html += '<td class="not-current">' + k + '</td>';
+                        k++;
+                    }
+                }
+                i++;
+            } while (i <= lastDateOfMonth);
+            // Конец таблицы
+            html += '</table>';
+            // Записываем HTML в div
+            document.getElementById(this.divId).innerHTML = html;
+        };
+        // При загрузке окна
+        window.onload = function () {
+            // Начать календарь
+            var c = new Cal("divCal");
+            c.showcurr();
+            // Привязываем кнопки «Следующий» и «Предыдущий»
+            getId('btnNext').onclick = function () {
+                c.nextMonth();
+            };
+            getId('btnPrev').onclick = function () {
+                c.previousMonth();
+            };
+        }
+        // Получить элемент по id
+        function getId(id) {
+            return document.getElementById(id);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body,
+        .wrapper {
+            height: 100%;
+        }
+
+        .item {
+            background: gold;
+            font-size: 3rem;
+
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 150px 200px auto 50px;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "aside inbox chat panel"
+            ;
+
+
+        }
+
+        
+        .aside {
+            background: grey;
+            grid-area: aside;
+        }
+
+        .inbox {
+            background: coral;
+            grid-area: inbox;
+        }
+
+        .chat {
+            background-color: blueviolet;
+            grid-area: chat;
+        }
+        
+        .panel {
+            background-color: lightgray;
+            grid-area: panel;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div> -->
+
+        <div class="aside"></div>
+        <div class="inbox"></div>
+        <div class="chat"></div>
+        <div class="panel"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша компания</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+        h1 {
+            color: blue;
+            background: lightgray;
+
+
+        }
+
+        p {
+            font-size: 0, 5rem;
+            font-weight: 500;
+            
+        }
+
+        img {
+            height: 300px;
+            border-radius: 20px;
+            border: 4px solid rgb(5, 1, 233);
+            margin: 1rem;
+            padding: 1rem;
+            text-align: justify;
+        }
+        input {
+            padding: 1rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: none;
+            background: rgb(225, 243, 255);
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    <!--Какой-то комментарий-->
+    <!-- илдлдтд -->
+
+    <h1>
+        О компании...
+    </h1>
+    <h3>
+        Company name
+    </h3>
+    <img src="https://via.placeholder.com/300
+    " alt="Логотип компании">
+    <!-- <input type="number" placeholder="Введите сумму">
+    <textarea placeholder=""   ;  -->
+    <p>
+        Была весна и пели птицы...
+
+        <a href="">
+            Присоединиться к нам
+        </a>
+        
+    </p>
+    <h3> Наши услуги </h3>h3>
+
+    <input type="text"placeholder="Поиск">
+</body>
+
+</html>

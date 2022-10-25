@@ -1,0 +1,213 @@
+https://oleksiykharkiv.github.io/Git_Linux_DZ/
+https://github.com/OleksiyKharkiv/FrontEnd/blob/master/Test_29_09_2022.html
+https://oleksiykharkiv.github.io/Git_Linux_DZ/github.com/FrontEnd/blob/master/Test_29_09_2022.html
+
+
+(1) Посчитать сколько в макете столбцов/строк
+(2) Посчитать ко-во областей
+(3) Придумать им названия (для легкого распоряжения)
+(4) Описать структуру (в HTML): указать контейнер и каждую область
+(5) Описать стили для контейнера
+	"элемент_1 элемент_2"
+(6) Описать стили для каждой области
+	grid-area: название_области
+
+
+(1) Браузерные
+(2) Веб-сайта
+(3) Пользовательские
+
+Читать!
+https://developer.mozilla.org/ru/docs/Web/CSS/clamp
+https://developer.mozilla.org/ru/docs/Web/CSS/minmax
+
+
+
+
+https://cdn.dribbble.com/userupload/2847800/file/original-b9303174fb9146311457fb102c9d4fa1.png?compress=1&resize=1600x1200
+
+position
+	static (по умол.)
+	absolute
+	relative
+	fixed
+	sticky
+
+trening
+https://www.typingstudy.com/de-german-2/lesson/4/part/9
+
+
+Кнопки с иконками:
+https://html5css.ru/edithtm/index.php
+
+
+Ширина блока:
+width: calc (100%vw*2/3) viewport window
+
+
+https://developer.mozilla.org/ru/docs/Glossary/Semantics
+
+Домашка:
+https://cdn.dribbble.com/userupload/2847800/file/original-b9303174fb9146311457fb102c9d4fa1.png?compress=1&resize=1905x1429
+
+https://via.placeholder.com/150
+https://developer.mozilla.org/ru/docs/Web/HTML/Element/menu
+
+Вставка аудио:
+https://developer.mozilla.org/ru/docs/Web/HTML/Element/audio
+
+Скрыть скрол-бар:
+.messages::-webkit-scrollbar {
+            display: none;
+        }
+owerflow: scroll
+.container, .messages {
+    overflow-y: scroll;
+    height: 90%;
+}
+Адапт ация под мобильный (простая)
+grid-row-start: ;
+:
+@media (max-width: 768px) {}
+
+Размножалка
+
+https://code.visualstudio.com/docs/editor/emmet
+
+
+
+БЭМ
+Блок - самостоятельная часть дизайна
+Элемент - неотъемлемая часть блока
+Модификатор (блока/элемента) - уточнение
+
+(1) Как верстать данный макет?
+(2) Как назвать части макета?
+(3) Какие семант/теги здесь можно использовать?
+
+Календарь:
+https://proglib.io/p/javascript-i-html-delaem-prostoy-kalendar-za-5-minut-2022-06-01
+
+
+Background
+https://images.unsplash.com/photo-1529539795054-3c162aab037a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
+
+Selectors:
+https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Selectors
+Icons:
+icons8.com
+
+https://developer.mozilla.org/ru/docs/Web/CSS/position 
+
+https://developer.mozilla.org/ru/docs/Glossary/Semantics 
+
+https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Selectors 
+
+https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox
+
+
+three.js
+база картинок Java 
+
+Библиотека шрифтов Гугл:
+https://fonts.google.com/
+
+Валидатор сайта: 
+https://validator.w3.org/#validate_by_input
+
+CSS-Валидатор:
+https://jigsaw.w3.org/css-validator/
+
+Псевдоклассы и селекторы .
+
+Справочные материалы:
+https://developer.mozilla.org/ru/docs/Learn/HTML/IntroductiontoHTML 
+https://developer.mozilla.org/ru/docs/Web/CSS/Reference 
+
+<ol>
+        <li>
+            Пункт 1
+        </li>
+        <li>
+            Пункт 2
+        </li>
+        <li>
+            Пункт 3
+        </li>
+        <li>
+            Пункт 5
+        </li>
+        <li>
+            Пункт 5
+        </li>
+    </ol>
+/* inline - для строчных */
+            /* block - для блочных */
+
+viewport height
+vieweport width [vw]
+box-sizing: border-box;
+
+background: linear-gradient(226deg, #ffffff00, #5d87ff);
+    height: 100vh;
+background: linear-gradient(226deg, #ffffff00, #5d87ff);
+    height: 100vh;
+https://cssgradient.io/
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(226deg, #ffffff00, #5d87ff);
+    height: 100vh;
+
+        }
+        h1{
+            top: 8rem;
+        }
+        img {
+            border-radius: 50%;
+        }
+       div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(235,235,235);
+        padding: 1rem;
+        border-radius: 0 0 8px 8px;
+        position: fixed;
+        top: 0;
+
+       }
+    </style>
+
+</head>
+
+<body>
+    
+    <div>
+        <img src="https://via.placeholder.com/60
+        " alt="">
+        <a href="">Каталог</a>
+        <a href="">О компании</a>
+        <a href="">Адрес</a>
+        <a href="">Контакт</a>
+        <a href="">5</a>
+    </div>
+    <span></span>
+    <h1> О компании
+        
+    </h1>
+   
+
+</body>
+
+</html>
