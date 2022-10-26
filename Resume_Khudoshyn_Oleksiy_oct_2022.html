@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khudoshyn Oleksiy FE BE</title>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;900&display=swap");
+
+        html,
+        body,
+        .wrapper {
+            height: 100%;
+            width: 100%;
+            margin: 0%;
+        }
+
+        .body {
+            padding: 10px;
+        }
+
+        .wrapper {
+            padding: 10px;
+        }
+
+        body {
+            font-family: "Oswald", sans-serif;
+            margin: 0%;
+            background: #e5e7e9;
+            padding: 0%;
+            display: grid;
+            grid-template-rows: 200px auto 50px;
+            grid-template-areas:
+                "title"
+                "wrapper"
+                "footer"
+            ;
+        }
+
+        .title {
+            grid-area: title;
+            display: grid;
+            grid-template-columns: 200PX auto;
+            grid-template-rows: 2fr 1fr 1fr;
+            background: #c9c8c6;
+            grid-template-areas:
+                "photo h1"
+                "photo h3"
+                "photo contacts"
+            ;
+            padding-bottom: 15px;
+        }
+
+        .photo {
+            grid-area: photo;
+            /* height: 200px;
+            width: 200px; */
+            align-items: center;
+            justify-items: center;
+        }
+
+
+        h1 {
+            grid-area: h1;
+            padding-left: 50px;
+            font-size: 50px;
+            color: #4c4d4f;
+            align-self: flex-end;
+            margin: 1px;
+        }
+
+        h2 {
+            grid-area: h3;
+            padding-left: 50px;
+            font-size: 25px;
+            color: #4c4d4f;
+            align-self: flex-start;
+            margin: 1px;
+        }
+
+        h3 {
+            grid-area: h3;
+            padding-left: 25px;
+            font-size: 25px;
+            color: #4c4d4f;
+            align-self: flex-start;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            margin: 5px;
+            margin-top: 15px;
+            padding-left: 20px;
+            color: #4c4d4f;
+        }
+
+        h5 {
+            margin: 5px;
+            padding-left: 20px;
+            color: #4c4d4f;
+        }
+
+        a {
+            padding-left: 20px;
+            color: #4c4d4f;
+
+        }
+
+        p {
+            padding-left: 20px;
+            color: #4c4d4f;
+            margin-left: 5px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+        }
+
+
+        .contacts {
+            grid-area: contacts;
+            display: grid;
+            grid-template-columns: 200px 200px 165px 165px;
+        }
+
+        li {
+            list-style-type: none;
+
+            /* Убираем маркеры */
+        }
+
+        .icon {
+            height: 100%;
+            font-size: 0rem;
+            color: #868480;
+            vertical-align: bottom;
+        }
+
+        .contacts_items {
+            align-items: center;
+        }
+
+        .contacts__text {
+            text-decoration: none;
+            marker: none;
+            color: #868480;
+            font-size: 1rem;
+            vertical-align: middle;
+            padding-left: 5px;
+
+        }
+
+        section {
+            border-bottom: solid 2px #868480;
+            padding: 10px;
+            padding-top: 0%;
+        }
+
+        .Education,
+        .PersonalData,
+        .Employment,
+        .Profile,
+        .Skills,
+        .Courses,
+        .Languages,
+        .IndividualSection,
+        .Hobbies,
+        .SoftSkill {
+            background: #e7e5e8;
+        }
+
+        .chart .pipe {
+            background: #eee none repeat scroll 0 0;
+            box-shadow: 3px 3px 3px 0 rgb(200, 200, 200) inset;
+        }
+
+        .chart .pipe {
+            width: 100%;
+            height: 10px;
+            border-radius: 5px;
+            margin-bottom: 0.1rem;
+        }
+
+        .chart p {
+            margin: 0 0 5px
+        }
+
+        .chart .pipe>div {
+            background: #4e4748 none repeat scroll 0 0;
+            border-radius: 5px;
+            height: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .wrapper {
+            grid-area: wrapper;
+            background: #e5e7e9;
+            padding: 0%;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 200px 400px 230px 230px 230px 200px;
+            grid-template-areas:
+                "Education PersonalData"
+                "Employment PersonalData"
+                "Profile Skills"
+                "Courses Languages"
+                "IndividualSection Hobbies"
+                "SoftSkill Softskill"
+            ;
+            gap: 10px;
+            overflow-y: scroll;
+        }
+
+        .Education {
+            grid-area: Education;
+        }
+
+        .PersonalData {
+            grid-area: PersonalData;
+        }
+
+        .Employment {
+            grid-area: Employment;
+        }
+
+        .PersonalData {
+            grid-area: PersonalData;
+        }
+
+        .Profile {
+            grid-area: Profile;
+        }
+
+        .Skills {
+            grid-area: Skills;
+        }
+
+        .Courses {
+            grid-area: Courses;
+        }
+
+        .Languages {
+            grid-area: Languages;
+        }
+
+        .IndividualSection {
+            grid-area: IndividualSection;
+        }
+
+        .Hobbies {
+            grid-area: Hobbies;
+        }
+
+        .SoftSkill {
+            grid-area: SoftSkill;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="title">
+        <div class="photo">
+            <img style="width: 175px;" src="Khudoshyn_photo bw.jpg" alt="">
+        </div>
+        <h1>OLEKSIY KHUDOSHYN</h1>
+        <h2> FrontEnd&BackEnd developer, QA</h2>
+        <ul class="contacts">
+            <li class="contacts_item">
+                <span class="icon">
+                    <img src="https://img.icons8.com/material-rounded/24/000000/new-post.png" />
+
+                </span>
+                <span class="contacts__text">
+                    <a href="mailto:khudoshyn.o@gmail.com">khudoshyn.o@gmail.com</a>
+                </span>
+            </li>
+
+            <li class="contacts_item">
+                <span class="icon">
+                    <img src="https://img.icons8.com/ios-filled/20/000000/iphone13.png" />
+                </span>
+                <span class="contacts__text">
+                    <a href=”tel:+4915204799383”>+49 15 20 47 99 383</a>
+                </span>
+            </li>
+            <li class="contacts_item">
+                <span class="icon">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/skype.png" />
+                </span>
+                <span class="contacts__text">
+                    <a href="skype:hudoshin">hudoshin</a>
+                </span>
+            </li>
+            <li class="contacts_item">
+                <span class="icon">
+                    <img src="https://img.icons8.com/ios-filled/20/000000/marker.png" />
+                </span>
+                <span class="contacts__text">
+                    <a href="https://goo.gl/maps/6P1e3CPeMDyxrkAy7">Bergheim, Germany</a>
+                </span>
+            </li>
+
+        </ul>
+    </div>
+    <div class="wrapper">
+        <section class="Education">
+            <h3> Education</h3>
+            <h4>Secondary education</h4>
+            <a href=" https://licej.dp.ua">Physics and Mathematics Lyceum, Zhovty Vody, Ukraine</a>
+
+            <h4> Higher Education</h4>
+            <a href=" https://khai.edu/en/">Kharkiv Aerospace University (KhAI), Kharkiv, Ukraine</a>
+
+        </section>
+        <section class="PersonalData">
+            <h3> PersonalData</h3>
+            <h4>Date of birth</h4>
+            <p> 17.05.1976</p>
+            <h4>Driver's license</h4>
+            <p> Cat."B"</p>
+            <h4>Civil status</h4>
+            <p>married</p>
+            <h4>GitHub</h4>
+            <a
+                href="https://github.com/OleksiyKharkiv/FrontEnd/blob/master/README.md">github.com/OleksiyKharkiv/FrontEnd/blob/master/README.md</a>
+            <h4>LinkedIn</h4>
+            <a href="linkedin.com/in/alex-hudoshin-5b552b65">linkedin.com/in/alex-hudoshin-5b552b65</a>
+        </section>
+        <section class="Employment">
+            <h3> Employment</h3>
+            <h4>Director (06.2014...02.2022)</h4>
+            <p>State tenders. Participation in 1043 tenders, 521 wins. The total amount of contracts is UAH 29.45
+                million.</p>
+            <a href="https://clarity-project.info/tenderer/36455711">Polysan Ukraine PE, Kharkiv</a>
+            <h4>Director (05.2009...06.2014)</h4>
+            <a href="">Formula 95 PE, Kharkiv</a>
+            <h4>Director (10.2005...05.2009) </h4>
+            <p>Trading business management. Wholesale/retail/import (building materials/sanitareware). 3 shop, 2
+                web-site, warehouse, logistics department (3 trucks), 46 employees.</p>
+            <a href="">Maxigroup Ltd., Kharkiv</a>
+            <h4>Commercial Director (02.2002...10.2005) </h4>
+            </h4>
+            <p>Trading business management. Wholesale of building materials.</p>
+            <a href="">Vertical PE, Kharkiv</a>
+
+
+
+        </section>
+        <section class="Profile">
+            <h3>Profile</h3>
+            <p>There is a great desire and strength to be realized as a frontend/backend developer. </p>
+            <p> My experience in organizing and managing business processes from the point of view </p>
+            <p> of testing or a critical look from the position of the customer may be useful. </p>
+            <p> There is a positive experience of working in a team. Team wins, everyone wins!</p>
+            <p> Weaknesses: optimist.</p>
+
+            </p>
+        </section>
+        <section class="Skills">
+            <h3> Skills</h3>
+            <div class="chart">
+                <p> BackEnd </p>
+                <div class="pipe">
+                    <div style="width: 33%"> </div>
+                </div>
+                <p>FrontEnd </p>
+                <div class="pipe">
+                    <div style="width: 33%"> </div>
+                </div>
+                <p>QA</p>
+                <div class="pipe">
+                    <div style="width: 20%"> </div>
+                </div>
+                <p>Manager</p>
+                <div class="pipe">
+                    <div style="width: 90%"> </div>
+                </div>
+            </div>
+        </section>
+        <section class="Courses">
+            <h3> Courses</h3>
+            <h4>IT (FE, BE, QA) TelRan</h4>
+            <a href="https://tel-ran.de/">Tel-Ran</a>
+
+        </section>
+        <section class="Languages">
+            <h3>Languages</h3>
+            <div class="chart">
+                <p> English </p>
+                <div class="pipe">
+                    <div style="width: 55%"> </div>
+                </div>
+                <p>Deutsch </p>
+                <div class="pipe">
+                    <div style="width: 38%"> </div>
+                </div>
+                <p>Ukrainish</p>
+                <div class="pipe">
+                    <div style="width: 100%"> </div>
+                </div>
+                <p>Russian</p>
+                <div class="pipe">
+                    <div style="width: 100%"> </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="IndividualSection">
+            <h3> IndividualSection</h3>
+            Married, 3 wonderful children, jogging partner Jack Russell Terrier dog.
+            Mobile (personal car, driving license category B)
+        </section>
+        <section class="Hobbies">
+            <h3> Hobbies </h3>
+            <h4> Sport </h4>
+
+            <li style="list-style-type:circle; color: #4c4d4f;">swimming</li>
+            <li style="list-style-type:circle; color: #4c4d4f;">jogging</li>
+            <li style="list-style-type:circle; color: #4c4d4f;">football</li>
+
+            <h4> Motorcycles</h4>
+            <div style="list-style-type:circle">Old motorcycles (restoration).
+                Instagram moto_classic_ukraine</div>
+
+        </section>
+        <section class="SoftSkill">
+            <h3> SoftSkill</h3>
+
+            <li style="list-style-type:circle; color: #4c4d4f;">Sociability</li>
+            <li style="list-style-type:circle; color: #4c4d4f;">Persistence</li>
+            <li style="list-style-type:circle; color: #4c4d4f;">Patience</li>
+            <li style="list-style-type:circle; color: #4c4d4f;">Humor</li>
+            <li style="list-style-type:circle; color: #4c4d4f;">Perseverance, result oriented</li>
+        </section>
+    </div>
+
+    <footer>I consent to the processing of my personal data for the purpose of recruitment for the position to which I
+        am applying.</footer>
+    <a data-config="commands=chat,call,voicemail,add,userinfo,sendfile;size=22;status=on;theme=logo;language=ru;bgcolor=#868480;hostname=www.skaip.su"
+        id="skaip-buttons" href="http://www.skaip.su/">Skype</a>
+    <script src="//apps.skaip.su/buttons/widget/core.min.js" defer="defer"></script>
+</body>
+
+</html>
