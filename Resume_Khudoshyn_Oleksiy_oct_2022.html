@@ -205,7 +205,7 @@
             padding: 0%;
             display: grid;
             grid-template-columns: 2fr 1fr;
-            grid-template-rows: 200px 400px 230px 230px 230px 200px;
+            grid-template-rows: 200px 450px 230px 230px 230px 200px;
             grid-template-areas:
                 "Education PersonalData"
                 "Employment PersonalData"
@@ -260,6 +260,61 @@
 
         .SoftSkill {
             grid-area: SoftSkill;
+        }
+
+        @media (max-width: 768px) {
+            .wrapper {
+            grid-area: wrapper;
+            background: #e5e7e9;
+            padding: 0%;
+            display: grid;
+            grid-template-columns: 1fr;
+            /* grid-template-rows: 200px 450px 230px 230px 230px 200px 200px 200px 200px 200px; */
+            grid-template-areas:
+                "Education"
+                "Employment"
+                "Profile"
+                "Skills"
+                "Courses"
+                "Languages"
+                "IndividualSection"
+                "Hobbies"
+                "SoftSkill"
+                "PersonalData"
+            ;
+            gap: 10px;
+            overflow-y: scroll;
+        }
+            /* aside {
+                transform: translateX(-250px);
+                transition: all 0.5s ease-out;
+            }
+
+            .inbox {
+                transform: translateX(-650px);
+                transition: all 0.5s ease-out;
+            }
+
+            .addmenu {
+                transform: translateX(+70px);
+                transition: all 0.5s ease-out;
+            }
+
+            aside--open {
+                transform: none;
+            }
+
+            .inbox--open {
+                transform: none;
+            }
+
+            .addmenu--open {
+                transform: none;
+            }
+
+            .chat {
+                margin: 50px;
+            } */
         }
     </style>
 
@@ -445,9 +500,7 @@
 
     <footer>I consent to the processing of my personal data for the purpose of recruitment for the position to which I
         am applying.</footer>
-    <a data-config="commands=chat,call,voicemail,add,userinfo,sendfile;size=22;status=on;theme=logo;language=ru;bgcolor=#868480;hostname=www.skaip.su"
-        id="skaip-buttons" href="http://www.skaip.su/">Skype</a>
-    <script src="//apps.skaip.su/buttons/widget/core.min.js" defer="defer"></script>
+   
 </body>
 
 </html>
