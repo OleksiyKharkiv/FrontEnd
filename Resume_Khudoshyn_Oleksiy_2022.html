@@ -263,70 +263,60 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                display: grid;
+                grid-template-rows: 2fr 6fr 1fr;
+                grid-template-areas:
+                    "title"
+                    "wrapper"
+                    "footer"
+                ;
+            }
+
             .title {
-            width: 95%;
-            grid-template-columns: 120, auto;
-            padding-bottom: 5px;
-        }
-        h1 {
-            font-size: 30px;
-        }
-        h2 {
-            font-size: 15px;
-        }
+                grid-area: title;
+                display: grid;
+                grid-template-columns: 100px auto;
+                grid-template-rows: 2fr 1fr 1fr;
+                grid-template-areas:
+                    "photo h1"
+                    "photo h3"
+                    "photo contacts"
+                ;
+                padding-bottom: 5px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 10px;
+            }
+
             .wrapper {
-            width: 98%;
-            grid-area: wrapper;
-            background: #e5e7e9;
-            padding: 0%;
-            display: grid;
-            grid-template-columns: 1fr;
-            /* grid-template-rows: 200px 450px 230px 230px 230px 200px 200px 200px 200px 200px; */
-            grid-template-areas:
-                "Education"
-                "Employment"
-                "Profile"
-                "Skills"
-                "Courses"
-                "Languages"
-                "IndividualSection"
-                "Hobbies"
-                "SoftSkill"
-                "PersonalData"
-            ;
-            gap: 10px;
-            overflow-y: scroll;
-        }
-            /* aside {
-                transform: translateX(-250px);
-                transition: all 0.5s ease-out;
+                width: 98%;
+                grid-area: wrapper;
+                background: #e5e7e9;
+                padding: 0%;
+                display: grid;
+                grid-template-columns: 1fr;
+                /* grid-template-rows: 200px 450px 230px 230px 230px 200px 200px 200px 200px 200px; */
+                grid-template-areas:
+                    "Education"
+                    "Employment"
+                    "Profile"
+                    "Skills"
+                    "Courses"
+                    "Languages"
+                    "IndividualSection"
+                    "Hobbies"
+                    "SoftSkill"
+                    "PersonalData"
+                ;
+                gap: 5px;
+                overflow-y: scroll;
             }
-
-            .inbox {
-                transform: translateX(-650px);
-                transition: all 0.5s ease-out;
-            }
-
-            .addmenu {
-                transform: translateX(+70px);
-                transition: all 0.5s ease-out;
-            }
-
-            aside--open {
-                transform: none;
-            }
-
-            .inbox--open {
-                transform: none;
-            }
-
-            .addmenu--open {
-                transform: none;
-            }
-
-            .chat {
-                margin: 50px;
-            } */
         }
     </style>
 
@@ -512,7 +502,7 @@
 
     <footer>I consent to the processing of my personal data for the purpose of recruitment for the position to which I
         am applying.</footer>
-   
+
 </body>
 
 </html>
