@@ -122,7 +122,7 @@
         .contacts {
             grid-area: contacts;
             display: grid;
-            grid-template-columns: 200px 200px 165px 165px;
+            grid-template-columns: 3fr 3fr 2fr 2fr;
         }
 
         li {
@@ -261,20 +261,20 @@
         }
 
         @media (max-width: 768px) {
-            body {
+            /* body {
                 display: grid;
-                grid-template-rows: 2fr 6fr 1fr;
+                grid-template-rows: 2fr 7fr 1fr;
                 grid-template-areas:
                     "title"
                     "wrapper"
                     "footer"
                 ;
-            }
+            } */
 
             .title {
                 grid-area: title;
                 display: grid;
-                grid-template-columns: 100px auto;
+                grid-template-columns: 120px auto;
                 grid-template-rows: 2fr 1fr 1fr;
                 grid-template-areas:
                     "photo h1"
@@ -291,6 +291,7 @@
             h2 {
                 font-size: 10px;
             }
+                        
 
             .wrapper {
                 width: 98%;
@@ -313,7 +314,7 @@
                     "PersonalData"
                 ;
                 gap: 5px;
-                white-space: normal;
+                /* white-space: normal; */
                 overflow-y: scroll;
             }
         }
