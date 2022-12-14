@@ -277,8 +277,8 @@
             .title {
                 grid-area: title;
                 display: grid;
-                grid-template-columns: 50px auto;
-                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 120px auto;
+                grid-template-rows: 2fr 1fr 2fr;
                 grid-template-areas:
                     "photo h1"
                     "photo h3"
@@ -290,7 +290,7 @@
             .photo {
                 display: flex;
                 justify-content: space-between;
-                width: 100%;
+                width: 120%;
                 list-style: none;
                 margin: 0;
                 padding: 0;
@@ -301,17 +301,21 @@
             }
 
             h2 {
-                font-size: 10px;
+                font-size: 15px;
             }
 
             a {
                 padding-left: 1px;
             }
+            li {
+                font-size: 0,2rem;
+            }
 
             .contacts {
+                transform: translateX(-30px);
                 grid-area: contacts;
                 display: grid;
-                grid-template-columns: 3fr 3fr 2fr 2fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 font-size: 0,3rem;
                 margin: 0%;
             }
@@ -324,15 +328,15 @@
                 width: 100%;
                 list-style: none;
                 margin: 0;
-                padding: 1%;
+                padding: 5px;
 
             }
 
-            .contacts__text {
+            /* .contacts__text {
                 font-size: 0, 5rem;
                 vertical-align: auto;
                 padding-left: 1px;
-            }
+            } */
 
             .wrapper {
                 width: 98%;
@@ -386,7 +390,7 @@
                     <img src="https://img.icons8.com/ios-filled/20/000000/iphone13.png" />
                 </span>
                 <span class="contacts__text">
-                    <a href=”tel:+4915204799383”>+49 15 20 47 99 383</a>
+                    <a href=”tel:+4915204799383”>+49_15_20_47_99_383</a>
                 </span>
             </li>
             <li class="contacts_item">
