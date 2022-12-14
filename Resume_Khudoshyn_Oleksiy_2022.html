@@ -277,8 +277,8 @@
             .title {
                 grid-area: title;
                 display: grid;
-                grid-template-columns: 80px auto;
-                grid-template-rows: 2fr 1fr 1fr;
+                grid-template-columns: 50px auto;
+                grid-template-rows: 1fr 1fr 1fr;
                 grid-template-areas:
                     "photo h1"
                     "photo h3"
@@ -288,9 +288,6 @@
             }
 
             .photo {
-                /* transform: translateX(-90px);
-                transform: translateY(-25px); */
-
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
@@ -298,10 +295,6 @@
                 margin: 0;
                 padding: 0;
             }
-
-            /* img {
-            width: 20%;
-        } */
 
             h1 {
                 font-size: 20px;
@@ -319,15 +312,20 @@
                 grid-area: contacts;
                 display: grid;
                 grid-template-columns: 3fr 3fr 2fr 2fr;
-                font-size: 0, 5rem;
+                font-size: 0,3rem;
+                margin: 0%;
             }
 
-            /* ul {
-            padding:0%;
-            font-size: 0,5rem;
-        } */
             .contacts_items {
-                align-items: flex-start;
+                /* align-items: flex-start; */
+                display: grid;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                list-style: none;
+                margin: 0;
+                padding: 1%;
+
             }
 
             .contacts__text {
