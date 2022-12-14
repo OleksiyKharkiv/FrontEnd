@@ -286,10 +286,23 @@
                 ;
                 padding-bottom: 1px;
             }
+
             .photo {
-                transform: translateX(-90px);
-                transform: translateY(-25px);
+                /* transform: translateX(-90px);
+                transform: translateY(-25px); */
+
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                list-style: none;
+                margin: 0;
+                padding: 0;
             }
+
+            /* img {
+            width: 20%;
+        } */
+
             h1 {
                 font-size: 20px;
             }
@@ -301,13 +314,15 @@
             a {
                 padding-left: 1px;
             }
+
             .contacts {
-            grid-area: contacts;
-            display: grid;
-            grid-template-columns: 3fr 3fr 2fr 2fr;
-            font-size: 0,5rem;
-        }
-        /* ul {
+                grid-area: contacts;
+                display: grid;
+                grid-template-columns: 3fr 3fr 2fr 2fr;
+                font-size: 0, 5rem;
+            }
+
+            /* ul {
             padding:0%;
             font-size: 0,5rem;
         } */
@@ -316,7 +331,7 @@
             }
 
             .contacts__text {
-                font-size: 0,5rem;
+                font-size: 0, 5rem;
                 vertical-align: auto;
                 padding-left: 1px;
             }
@@ -353,7 +368,7 @@
 <body>
     <div class="title">
         <div class="photo">
-            <img style="width: 175px;" src="Khudoshyn_photo bw.jpg" alt="">
+            <img style="width: 85%;" src="Khudoshyn_photo bw.jpg" alt="">
         </div>
         <h1>OLEKSIY KHUDOSHYN</h1>
         <h2> FrontEnd&BackEnd developer, QA</h2>
