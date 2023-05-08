@@ -262,7 +262,7 @@
 
         @media (max-width: 768px) {
             body {
-                margin: 0%;
+                margin: 0 rem;
 
                 padding: 0%;
                 display: grid;
@@ -290,6 +290,8 @@
             .photo {
                 display: flex;
                 justify-content: space-between;
+                /* ниже строки не было*/
+                align-items: center;
                 width: 120%;
                 list-style: none;
                 margin: 0;
@@ -305,38 +307,36 @@
             }
 
             a {
-                padding-left: 1px;
+                /* padding-left: 1px;*/
+                padding-left: 5px;
             }
+
             li {
-                font-size: 0,2rem;
+                font-size: 0.2rem;
             }
 
             .contacts {
-                transform: translateX(-30px);
+                /*transform: translateX(-30px);*/
                 grid-area: contacts;
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                font-size: 0,3rem;
+                grid-template-columns: repeat(4, 1fr);
+                font-size: 0.3rem;
                 margin: 0%;
+                transform: translateX(-20px);
             }
 
             .contacts_items {
                 /* align-items: flex-start; */
-                display: grid;
+                /* display: grid;*/
                 display: flex;
                 justify-content: space-between;
-                width: 100%;
+                /*width: 100%;*/
                 list-style: none;
                 margin: 0;
-                padding: 5px;
+                /*padding: 5px;*/
+                padding: 0;
 
             }
-
-            /* .contacts__text {
-                font-size: 0, 5rem;
-                vertical-align: auto;
-                padding-left: 1px;
-            } */
 
             .wrapper {
                 width: 98%;
@@ -431,16 +431,17 @@
             <h4>Civil status</h4>
             <p>married</p>
             <h4>GitHub</h4>
-            <a
-                href="https://github.com/OleksiyKharkiv/GutBank">https://github.com/OleksiyKharkiv/GutBank</a>
+            <a href="https://github.com/OleksiyKharkiv/GutBank">https://github.com/OleksiyKharkiv/GutBank</a>
             <h4>LinkedIn</h4>
-            <a href="https://www.linkedin.com/in/oleksiy-khudoshyn-5b552b65/">linkedin.com/in/oleksiy-khudoshyn-5b552b65</a>
+            <a
+                href="https://www.linkedin.com/in/oleksiy-khudoshyn-5b552b65/">linkedin.com/in/oleksiy-khudoshyn-5b552b65</a>
         </section>
         <section class="Employment">
             <h3> Employment</h3>
             <h4>Back End Java engineer (Student) (Jul 2022-Present)</h4>
-            <p> Developing a layout of a banking web application (back-end) in Spring with a database (MySQL) connection, with tests.<a href="https://github.com/OleksiyKharkiv/GutBank">Github here</a>
-                </p>
+            <p> Developing a layout of a banking web application (back-end) in Spring with a database (MySQL)
+                connection, with tests.<a href="https://github.com/OleksiyKharkiv/GutBank">Github here</a>
+            </p>
             <h4>Director (06.2014...02.2022)</h4>
             <p>State tenders. Participation in 1043 tenders, 521 wins. The total amount of contracts is UAH 29.45
                 million.</p>
@@ -475,12 +476,13 @@
                 <p>Lambdas & Stream API</p>
                 <p>General and repetition (Regular expressions(Java RegExp), Generics, Exeptions, JUnit)</p>
                 <p>Multithreading (Threads)</p>
-                <p>Spring & Spring Boot (Apache Maven, Reflections, Annotations, Beans, Java JDBC API, JPA and databases; 
+                <p>Spring & Spring Boot (Apache Maven, Reflections, Annotations, Beans, Java JDBC API, JPA and
+                    databases;
                     Spring Boot: validation, logging and AOP basics, scheduled jobs), Docker</p>
                 <div class="pipe">
                     <div style="width: 33%"> </div>
                 </div>
-                
+
                 <h4>Manager</h4>
                 <div class="pipe">
                     <div style="width: 90%"> </div>
