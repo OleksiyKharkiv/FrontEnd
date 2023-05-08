@@ -277,6 +277,10 @@
                 ;
             }
 
+            footer {
+                font-size: 0.4rem
+            }
+
             .title {
                 grid-area: title;
                 display: grid;
@@ -293,7 +297,6 @@
             .photo {
                 display: flex;
                 justify-content: space-between;
-                /* ниже строки не было*/
                 align-items: center;
                 width: 120%;
                 list-style: none;
@@ -334,31 +337,23 @@
             }
 
             .contacts {
-                /*transform: translateX(-30px);*/
                 grid-area: contacts;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                /* font-size: 0.1rem; */
                 margin: 2%;
                 transform: translateX(-20px);
             }
 
             .contacts_items {
-                /* align-items: flex-start; */
-                /* display: grid;*/
                 display: flex;
                 justify-content: space-between;
-                /*width: 100%;*/
                 list-style: none;
                 margin: 2%;
-                /*padding: 5px;*/
                 padding: 0;
-
             }
 
             .contacts__text {
                 margin-left: -5px;
-
             }
 
             .wrapper {
