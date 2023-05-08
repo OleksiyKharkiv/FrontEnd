@@ -45,8 +45,8 @@
         .title {
             grid-area: title;
             display: grid;
-            grid-template-columns: 200PX auto;
-            grid-template-rows: 2fr 2fr 1fr;
+            grid-template-columns: 200px auto;
+            grid-template-rows: 3fr 2fr 1fr;
             background: #c9c8c6;
             grid-template-areas:
                 "photo h1"
@@ -105,7 +105,7 @@
         }
 
         a {
-            padding-left: 20px;
+            padding-left: 25px;
             color: #4c4d4f;
 
         }
@@ -149,7 +149,8 @@
             color: #868480;
             font-size: 1rem;
             vertical-align: middle;
-            padding-left: 5px;
+            padding-left: 0rem;
+            margin-left: -20px;
 
         }
 
@@ -196,7 +197,7 @@
 
         footer {
             grid-area: footer;
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
 
         .wrapper {
@@ -268,7 +269,7 @@
 
                 padding: 0%;
                 display: grid;
-                grid-template-rows: 180px auto 10px;
+                grid-template-rows: 130px auto 10px;
                 grid-template-areas:
                     "title"
                     "wrapper"
@@ -308,9 +309,24 @@
                 font-size: 15px;
             }
 
+            h3 {
+                padding-left: 8px;
+            }
+
+            h4 {
+                padding-left: 3px;
+            }
+
+            p {
+                padding-left: 3px;
+            }
+
             a {
-                /* padding-left: 1px;*/
-                padding-left: 5px;
+                padding-left: 8px;
+            }
+
+            .title .contacts a {
+                font-size: 0.6rem;
             }
 
             li {
@@ -322,8 +338,8 @@
                 grid-area: contacts;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                font-size: 0.3rem;
-                margin: 0%;
+                /* font-size: 0.1rem; */
+                margin: 2%;
                 transform: translateX(-20px);
             }
 
@@ -334,9 +350,14 @@
                 justify-content: space-between;
                 /*width: 100%;*/
                 list-style: none;
-                margin: 0;
+                margin: 2%;
                 /*padding: 5px;*/
                 padding: 0;
+
+            }
+
+            .contacts__text {
+                margin-left: -5px;
 
             }
 
@@ -379,7 +400,7 @@
         <ul class="contacts">
             <li class="contacts_item">
                 <span class="icon">
-                    <img src="https://img.icons8.com/material-rounded/24/000000/new-post.png" />
+                    <img src="https://img.icons8.com/material-rounded/20/000000/new-post.png" />
 
                 </span>
                 <span class="contacts__text">
@@ -392,12 +413,12 @@
                     <img src="https://img.icons8.com/ios-filled/20/000000/iphone13.png" />
                 </span>
                 <span class="contacts__text">
-                    <a href=”tel:+4915204799383”>+49_15_20_47_99_383</a>
+                    <a href=”tel:+4915204799383”>+4915204799383</a>
                 </span>
             </li>
             <li class="contacts_item">
                 <span class="icon">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/skype.png" />
+                    <img src="https://img.icons8.com/ios-glyphs/20/000000/skype.png" />
                 </span>
                 <span class="contacts__text">
                     <a href="skype:hudoshin">hudoshin</a>
@@ -408,7 +429,7 @@
                     <img src="https://img.icons8.com/ios-filled/20/000000/marker.png" />
                 </span>
                 <span class="contacts__text">
-                    <a href="https://goo.gl/maps/6P1e3CPeMDyxrkAy7">Bergheim, Germany</a>
+                    <a href="https://goo.gl/maps/6P1e3CPeMDyxrkAy7">Bergheim,Germany</a>
                 </span>
             </li>
 
