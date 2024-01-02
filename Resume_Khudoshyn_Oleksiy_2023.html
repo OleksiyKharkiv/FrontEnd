@@ -34,7 +34,7 @@
             background: #e5e7e9;
             padding: 0%;
             display: grid;
-            grid-template-rows: 200px auto 20px;
+            grid-template-rows: 160px auto 20px;
             grid-template-areas:
                 "title"
                 "wrapper"
@@ -66,7 +66,7 @@
         h1 {
             grid-area: h1;
             padding-left: 50px;
-            font-size: 50px;
+            font-size: 40px;
             color: #4c4d4f;
             align-self: flex-end;
             margin: 1px;
@@ -75,7 +75,7 @@
         h2 {
             grid-area: h3;
             padding-left: 50px;
-            font-size: 25px;
+            font-size: 30px;
             color: #4c4d4f;
             align-self: flex-start;
             margin: 1px;
@@ -88,7 +88,7 @@
             color: #4c4d4f;
             align-self: flex-start;
             margin: 0;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         h4 {
@@ -107,15 +107,16 @@
         a {
             padding-left: 25px;
             color: #4c4d4f;
-
+            font-size: 1.15rem;
         }
 
         p {
             padding-left: 20px;
             color: #4c4d4f;
             margin-left: 5px;
-            margin-top: 2px;
+            margin-top: 15px;
             margin-bottom: 5px;
+            font-size: 1.3rem;
         }
 
 
@@ -145,13 +146,12 @@
 
         .contacts__text {
             text-decoration: none;
-            marker: none;
+            /* Убрано некорректное свойство marker */
             color: #868480;
-            font-size: 1rem;
+            font-size: 1.3rem;
             vertical-align: middle;
             padding-left: 0rem;
             margin-left: -20px;
-
         }
 
         section {
@@ -161,7 +161,7 @@
         }
 
         .Education,
-        .PersonalData,
+        .Links,
         .Employment,
         .Profile,
         .Skills,
@@ -186,7 +186,7 @@
         }
 
         .chart p {
-            margin: 0 0 5px
+            margin: 15 0 5px
         }
 
         .chart .pipe>div {
@@ -205,15 +205,13 @@
             background: #e5e7e9;
             padding: 0%;
             display: grid;
-            grid-template-columns: 2fr 1fr;
-            grid-template-rows: 200px 410px 360px 230px 230px 200px;
+            grid-template-columns: 2fr 3fr;
+            grid-template-rows: 575px 280px 450px;
             grid-template-areas:
-                "Education PersonalData"
-                "Employment PersonalData"
-                "Profile Skills"
-                "Courses Languages"
-                "IndividualSection Hobbies"
-                "SoftSkill Softskill"
+                "Skills Profile"
+                "Education Links"
+                "Employment Languages"
+                "Courses  Hobbies"
             ;
             gap: 10px;
             overflow-y: scroll;
@@ -223,16 +221,16 @@
             grid-area: Education;
         }
 
-        .PersonalData {
-            grid-area: PersonalData;
+        .Links {
+            grid-area: Links;
         }
 
         .Employment {
             grid-area: Employment;
         }
 
-        .PersonalData {
-            grid-area: PersonalData;
+        .Links {
+            grid-area: Links;
         }
 
         .Profile {
@@ -263,10 +261,46 @@
             grid-area: SoftSkill;
         }
 
+        .Profile pre {
+            background-color: #2b2b2b;
+            color: #a9b7c6;
+            font-size: 15px;
+            line-height: 1.35;
+            margin: 0;
+            padding: 0px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+
+        .Profile pre code {
+            display: block;
+            overflow-x: auto;
+            white-space: pre;
+        }
+
+        .Profile pre .keyword {
+            color: #FF4500;
+            /* Оранжевый - цвет для ключевых слов */
+        }
+
+        .Profile pre .string {
+            color: #008000;
+            /* Зеленый - цвет для строк в кавычках */
+        }
+
+        .Profile pre .identifier {
+            color: #FFFFFF;
+            /* Белый - цвет для строк в идентификаторах (String) */
+        }
+
+        .Profile pre .method {
+            color: #0000FF;
+            /* Синий - цвет для методов (main, inWorkIAmBetterRealizedInATeam) */
+        }
+
         @media (max-width: 768px) {
             body {
                 margin: 0 rem;
-
                 padding: 0%;
                 display: grid;
                 grid-template-rows: 130px auto 10px;
@@ -365,16 +399,16 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: 2fr 6fr 5fr 3fr 2fr 2fr 2fr 2fr 2fr 2fr;
                 grid-template-areas:
+                    "Skills"
                     "Education"
                     "Employment"
                     "Profile"
-                    "Skills"
+                    "Links"
                     "Courses"
                     "Languages"
                     "IndividualSection"
                     "Hobbies"
                     "SoftSkill"
-                    "PersonalData"
                 ;
                 gap: 5px;
                 white-space: normal;
@@ -388,7 +422,7 @@
 <body>
     <div class="title">
         <div class="photo">
-            <img style="width: 85%;" src="Khudoshyn_photo bw.jpg" alt="">
+            <img style="width: 83%; margin-top: -25px;" src="Khudoshyn_photo bw.jpg" alt="">
         </div>
         <h1>OLEKSIY KHUDOSHYN</h1>
         <h2> Java Backend Developer</h2>
@@ -431,29 +465,73 @@
         </ul>
     </div>
     <div class="wrapper">
+        <section class="Skills">
+            <h3> Skills</h3>
+            <div class="chart">
+                <p>• Java and Spring Framework</p>
+                <p>• RESTful API and Web Services</p>
+                <p>• Database Skills (PostgreSQL, MySQL)</p>
+                <p>• Spring Security and Authentication</p>
+                <p>• Maven</p>
+                <p>• JUnit Tests</p>
+                <p>• Swagger</p>
+                <p>• Docker (basic)</p>
+                <p>• Kubernetes (basic)</p>
+                <p>• Jira, Asana</p>
+            </div>
+        </section>
+
+        <section class="Profile">
+            <h3>Summary (in Java-style)</h3>
+            <pre><code>   public class Summary {
+            String background = "Physics and Mathematics Lyceum";
+            String technicality = "Engineering education, IT School";
+            String softSkillsPackage = "Experience in creating and managing an e-commerce store, crisis and time management";
+                    
+            public static void main(String[] args) {
+                String thatIlove1 = "to design";
+                String thatIlove2 = "Draw";
+                String thatIlove4 = "I can see the unusual in the ordinary";
+                String result = inWorkIAmBetterRealizedInATeam();
+            }
+            public static void inWorkIAmBetterRealizedInATeam() {
+                SoftSkills experienceInCriticalSituations = new SoftSkills(ManagmentSkill, commerceSkill);
+                switch (ifYouWereEaten) {
+                    case 1:
+                        exitUp;
+                        break;
+                    case 2:
+                        exitDown;
+                        break;
+                    default:
+                        System.out.println("Team wins, everyone wins!");
+                        break;
+                }
+            }
+        }</pre></code>
+        </section>
+
         <section class="Education">
             <h3> Education</h3>
-            <h4>Secondary education</h4>
-            <a href=" https://licej.dp.ua">Physics and Mathematics Lyceum, Zhovty Vody, Ukraine</a>
-
+            <h4> IT school</h4>
+            <a href="https://tel-ran.de/">Tel-Ran.de, Berlin, Germany</a>
             <h4> Higher Education</h4>
             <a href=" https://khai.edu/en/">Kharkiv Aerospace University (KhAI), Kharkiv, Ukraine</a>
+            <h4>Secondary education</h4>
+            <a href=" https://licej.dp.ua">Physics and Mathematics Lyceum, Zhovty Vody, Ukraine</a>
+        </section>
 
-        </section>
-        <section class="PersonalData">
-            <h3> PersonalData</h3>
-            <h4>Date of birth</h4>
-            <p> 17.05.1976</p>
-            <h4>Driver's license</h4>
-            <p> Cat."B"</p>
-            <h4>Civil status</h4>
-            <p>married</p>
+        <section class="Links">
+            <h3> Links</h3>
             <h4>GitHub</h4>
-            <a href="https://github.com/OleksiyKharkiv/GutBank">https://github.com/OleksiyKharkiv/GutBank</a>
+            <a href="https://github.com/OleksiyKharkiv">github.com/OleksiyKharkiv</a>
             <h4>LinkedIn</h4>
+            <a href="https://linkedin.com/in/oleksiy-khudoshyn-5b552b65">linkedin.com/Oleksiy_Khudoshyn</a>
+            <h4>WEB-CV</h4>
             <a
-                href="https://www.linkedin.com/in/oleksiy-khudoshyn-5b552b65/">linkedin.com/in/oleksiy-khudoshyn-5b552b65</a>
+                href="https://oleksiykharkiv.github.io/FrontEnd/Resume_Khudoshyn_Oleksiy_2023.html">github.io/WEB-CV_Khudoshyn_Oleksiy.html</a>
         </section>
+
         <section class="Employment">
             <h3> Employment</h3>
             <h4>Back End Java engineer (Student) (Jul 2022-Present)</h4>
@@ -468,49 +546,8 @@
             <p>Trading business management. Wholesale/retail/import (building materials/sanitareware). 3 shop, 2
                 web-site, warehouse, logistics department (3 trucks), 46 employees.</p>
             <a href="">Maxigroup Ltd., Kharkiv</a>
-            <!-- <h4>Commercial Director (02.2002...10.2005) </h4>
-            </h4>
-            <p>Trading business management. Wholesale of building materials.</p>
-            <a href="">Vertical PE, Kharkiv</a> -->
-
         </section>
-        <section class="Profile">
-            <h3>Profile</h3>
-            <p>There is a great desire and strength to be realized as a frontend/backend developer. </p>
-            <p> My experience in organizing and managing business processes from the point of view </p>
-            <p> of testing or a critical look from the position of the customer may be useful. </p>
-            <p> There is a positive experience of working in a team. Team wins, everyone wins!</p>
-            <p> Weaknesses: optimist.</p>
 
-            </p>
-        </section>
-        <section class="Skills">
-            <h3> Skills</h3>
-            <div class="chart">
-                <h3> BackEnd (Java)</h3>
-                <p>Java Collections Framework (JCF)</p>
-                <p>Lambdas & Stream API</p>
-                <p>General and repetition (Regular expressions(Java RegExp), Generics, Exeptions, JUnit)</p>
-                <p>Multithreading (Threads)</p>
-                <p>Spring & Spring Boot (Apache Maven, Reflections, Annotations, Beans, Java JDBC API, JPA and
-                    databases;
-                    Spring Boot: validation, logging and AOP basics, scheduled jobs), Docker</p>
-                <div class="pipe">
-                    <div style="width: 33%"> </div>
-                </div>
-
-                <h4>Manager</h4>
-                <div class="pipe">
-                    <div style="width: 90%"> </div>
-                </div>
-            </div>
-        </section>
-        <section class="Courses">
-            <h3> Courses</h3>
-            <h4>IT (FE, BE, QA) TelRan</h4>
-            <a href="https://tel-ran.de/">Tel-Ran</a>
-
-        </section>
         <section class="Languages">
             <h3>Languages</h3>
             <div class="chart">
@@ -531,18 +568,11 @@
                     <div style="width: 100%"> </div>
                 </div>
             </div>
-
-
         </section>
-        <section class="IndividualSection">
-            <h3> IndividualSection</h3>
-            Married, 3 wonderful children, jogging partner Jack Russell Terrier dog.
-            Mobile (personal car, driving license category B)
-        </section>
+
         <section class="Hobbies">
             <h3> Hobbies </h3>
             <h4> Sport </h4>
-
             <li style="list-style-type:circle; color: #4c4d4f;">swimming</li>
             <li style="list-style-type:circle; color: #4c4d4f;">jogging</li>
             <li style="list-style-type:circle; color: #4c4d4f;">football</li>
@@ -550,17 +580,21 @@
             <h4> Motorcycles</h4>
             <div style="list-style-type:circle">Old motorcycles (restoration).
                 Instagram moto_classic_ukraine</div>
-
         </section>
-        <section class="SoftSkill">
-            <h3> SoftSkill</h3>
 
-            <li style="list-style-type:circle; color: #4c4d4f;">Sociability</li>
-            <li style="list-style-type:circle; color: #4c4d4f;">Persistence</li>
-            <li style="list-style-type:circle; color: #4c4d4f;">Patience</li>
-            <li style="list-style-type:circle; color: #4c4d4f;">Humor</li>
-            <li style="list-style-type:circle; color: #4c4d4f;">Perseverance, result oriented</li>
+        <!-- Блоки "Courses" и "IndividualSection" закомментированы, поскольку вы запросили закомментировать неиспользуемые блоки. -->
+        <!-- <section class="Courses">
+            <h3> Courses</h3>
+            <h4>IT (FE, BE, QA) TelRan</h4>
+            <a href="https://tel-ran.de/">Tel-Ran</a>
         </section>
+
+        <section class="IndividualSection">
+            <h3> IndividualSection</h3>
+            Married, 3 wonderful children, jogging partner Jack Russell Terrier dog.
+            Mobile (personal car, driving license category B)
+        </section> -->
+
     </div>
 
     <footer>I consent to the processing of my personal data for the purpose of recruitment for the position to which I
