@@ -1,4 +1,4 @@
-# Web-CV of Alexey (Backend Developer)
+# Web-CV of Oleksiy Khudoshyn (Backend Developer)
 
 This is a personal web-based CV designed to demonstrate proficiency in **HTML5**, along with an understanding of how to implement active links, page navigation, and a clean, readable structure. This project is created as part of the demonstration of backend development skills, highlighting key projects and areas of expertise.
 
