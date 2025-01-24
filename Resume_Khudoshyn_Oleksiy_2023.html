@@ -17,7 +17,7 @@
         .wrapper {
             height: 100%;
             width: 100%;
-            margin: 0%;
+            margin: 0;
         }
 
         .body {
@@ -30,9 +30,9 @@
 
         body {
             font-family: "Oswald", sans-serif;
-            margin: 0%;
+            margin: 0;
             background: #e5e7e9;
-            padding: 0%;
+            padding: 0;
             display: grid;
             grid-template-rows: 160px auto 20px;
             grid-template-areas:
@@ -133,7 +133,7 @@
 
         .icon {
             height: 100%;
-            font-size: 0rem;
+            font-size: 0;
             color: #868480;
             vertical-align: bottom;
         }
@@ -148,14 +148,14 @@
             color: #868480;
             font-size: 1.3rem;
             vertical-align: middle;
-            padding-left: 0rem;
+            padding-left: 0;
             margin-left: -20px;
         }
 
         section {
             border-bottom: solid 2px #868480;
             padding: 10px;
-            padding-top: 0%;
+            padding-top: 0;
         }
 
         .Education,
@@ -163,6 +163,7 @@
         .Employment,
         .Profile,
         .Skills,
+        .Employment,
         .Courses,
         .Languages,
         .IndividualSection,
@@ -184,7 +185,7 @@
         }
 
         .chart p {
-            margin: 15 0 5px
+            margin: 15px 0 5px;
         }
 
         .chart .pipe > div {
@@ -201,7 +202,7 @@
         .wrapper {
             grid-area: wrapper;
             background: #e5e7e9;
-            padding: 0%;
+            padding: 0;
             display: grid;
             grid-template-columns: 2fr 3fr;
             grid-template-rows: 575px 280px 450px;
@@ -264,7 +265,7 @@
             font-size: 15px;
             line-height: 1.35;
             margin: 0;
-            padding: 0px;
+            padding: 0;
             border-radius: 5px;
             overflow: auto;
         }
@@ -276,22 +277,22 @@
         }
 
         .Profile pre .keyword {
-            color: #FF4500;
+            color: var(#FF4500);
             /* Оранжевый - цвет для ключевых слов */
         }
 
         .Profile pre .string {
-            color: #008000;
+            color: var(#008000);
             /* Зеленый - цвет для строк в кавычках */
         }
 
         .Profile pre .identifier {
-            color: #FFFFFF;
+            color: var(#FFFFFF);
             /* Белый - цвет для строк в идентификаторах (String) */
         }
 
         .Profile pre .method {
-            color: #0000FF;
+            color: var(#0000FF);
             /* Синий - цвет для методов (main, inWorkIAmBetterRealizedInATeam) */
         }
 
@@ -392,7 +393,7 @@
                 padding: 0%;
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 2fr 6fr 5fr 3fr 2fr 2fr 2fr 2fr 2fr 2fr;
+                grid-template-rows: 2fr 7fr 5fr 4fr 2fr 2fr 2fr 2fr 2fr 2fr;
                 grid-template-areas:
                     "Skills"
                     "Education"
@@ -472,8 +473,7 @@
             <p>• Swagger, Postman</p>
             <p>• Docker </p>
             <p>• Kubernetes (basic)</p>
-            <p>• Jira, Asana</p>
-            <p>• MS PowerBI </p>
+            <p>• Jira, Asana, MS PowerBI</p>
         </div>
     </section>
 
@@ -504,7 +504,7 @@
                         break;
                 }
             }
-        }</pre></code>
+        }</code></pre>
     </section>
 
     <section class="Education">
@@ -530,10 +530,22 @@
 
     <section class="Employment">
         <h3> Employment</h3>
-        <h4>Back End Java Developer  (Sept 2023-Jan 2024)</h4>
+        <h4>Trainee DevOps (March 2024-Feb 2025)</h4>
+        <p> Collaborated in 10-day sprints with the MATS development team, focusing on feature implementation
+            and bug fixing for a training platform with 20,000+ users (Kotlin, Go, GitLab, Jira, Swagger, and Postman)
+            Data restoration from DB dumps, filtering and processing in MongoDB, export to MS SQL,
+            followed by export to reports I developed in MS Power BI
+            Assisted in improving server infrastructure under the guidance of the team lead,
+            contributed to migration features for Google Cloud as a junior developer.
+            <a href="https://mats.coach/"> MATS</a>
+            <a href="https://light-digital.solutions/">Light Digital Solutions GmbH</a>
+        </p>
+        <h4>Back End Java Developer (Sept 2023-Jan 2024)</h4>
         <p> Development of the server part of the application (back-end) in Spring with a database (PostgeSQL)
-            connection, authorization, deployment to GitLab, unit-tests. MedAtlas is an interactive Medical Atlas designed for doctors, researchers, and medical students.
-            It allows for the use and extension of a core library of data that contains a cataloged database of anatomical structures, which are tied to research subjects.
+            connection, authorization, deployment to GitLab, unit-tests. MedAtlas is an interactive Medical Atlas
+            designed for doctors, researchers, and medical students.
+            It allows for the use and extension of a core library of data that contains a cataloged database of
+            anatomical structures, which are tied to research subjects.
             <a href="https://github.com/OleksiyKharkiv/MedAtlas">Github here</a>
             <a href="https://medcol.io/">Medcol.io</a>
         </p>
@@ -547,10 +559,10 @@
         <p>State tenders. Participation in 1043 tenders, 521 wins. The total amount of contracts is UAH 29.45
             million.</p>
         <a href="https://clarity-project.info/tenderer/36455711">Polysan Ukraine PE, Kharkiv</a>
-<!--        <h4>Director (10.2005...05.2014) </h4>-->
-<!--        <p>Trading business management. Wholesale/retail/import (building materials/sanitareware). 3 shop, 2-->
-<!--            web-site, warehouse, logistics department (3 trucks), 46 employees.</p>-->
-<!--        <a href="">Maxigroup Ltd., Kharkiv</a>-->
+        <!--        <h4>Director (10.2005...05.2014) </h4>-->
+        <!--        <p>Trading business management. Wholesale/retail/import (building materials/sanitareware). 3 shop, 2-->
+        <!--            web-site, warehouse, logistics department (3 trucks), 46 employees.</p>-->
+        <!--        <a href="">Maxigroup Ltd., Kharkiv</a>-->
     </section>
 
     <section class="Languages">
