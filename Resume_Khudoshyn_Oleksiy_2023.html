@@ -270,30 +270,35 @@
             overflow: auto;
         }
 
+        :root {
+            --keyword-color: #FF4500; /* Orange color for keywords */
+            --profile-keyword-color: #3498db; /* Default blue color for profile keywords */
+            --profile-keyword-text-color: var(--keyword-color); /* Reusable variable for text color */
+            --string-color: #008000; /* Green - color for strings */
+            --identifier-color: #FFFFFF; /* White - color for identifiers */
+            --method-color: #0000FF; /* Blue - color for methods */
+        }
+
         .Profile pre code {
             display: block;
             overflow-x: auto;
             white-space: pre;
         }
 
-        .Profile pre .keyword {
-            color: var(#FF4500);
-            /* Оранжевый - цвет для ключевых слов */
+        .profile .keyword {
+            color: var(--profile-keyword-color);
         }
 
         .Profile pre .string {
-            color: var(#008000);
-            /* Зеленый - цвет для строк в кавычках */
+            color: var(--string-color); /* Green - for strings in quotes */
         }
 
         .Profile pre .identifier {
-            color: var(#FFFFFF);
-            /* Белый - цвет для строк в идентификаторах (String) */
+            color: var(--identifier-color); /* White - for identifier strings */
         }
 
         .Profile pre .method {
-            color: var(#0000FF);
-            /* Синий - цвет для методов (main, inWorkIAmBetterRealizedInATeam) */
+            color: var(--method-color); /* Blue - for method names */
         }
 
         @media (max-width: 768px) {
@@ -437,7 +442,16 @@
                     <img src="https://img.icons8.com/ios-filled/20/000000/iphone13.png"/>
                 </span>
             <span class="contacts__text">
-                    <a href=”tel:+4915204799383”>+4915204799383</a>
+                    <a> <style>
+    a {
+        color: blue;
+        text-decoration: none; /* Optional: Remove underline if undesired */
+    }
+
+    a:hover {
+        text-decoration: underline; /* Optional: Add underline on hover for better UX */
+    }
+</style>>+4915204799383</a>
                 </span>
         </li>
         <li class="contacts_item">
