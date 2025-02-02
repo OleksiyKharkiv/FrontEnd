@@ -300,14 +300,20 @@
 
         @media (max-width: 480px) {
             body {
-                grid-template-rows: 100px auto 10px;
+                grid-template-rows: 50px auto 10px;
             }
 
             .title {
                 grid-template-columns: 1fr;
                 grid-template-rows: auto auto auto;
+                grid-template-areas:
+            "photo"
+            "h1"
+            "h3"
+            "contacts";
                 text-align: center;
-                padding: 5px;
+                padding: 10px;
+                background: #c9c8c6;
             }
 
             .photo {
