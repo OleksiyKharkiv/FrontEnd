@@ -298,66 +298,118 @@
             color: var(--method-color); /* Blue - for method names */
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 768px) {
             body {
-                grid-template-rows: 170px auto 10px;
+                margin: 0;
+                padding: 0;
+                display: grid;
+                grid-template-rows: 130px auto 10px;
+                grid-template-areas:
+                    "title"
+                    "wrapper"
+                    "footer";
+            }
+
+            footer {
+                font-size: 0.4rem
             }
 
             .title {
-                grid-template-columns: auto auto;
-                grid-template-rows: 2fr 6fr auto;
+                grid-area: title;
+                display: grid;
+                grid-template-columns: 120px auto;
+                grid-template-rows: 2fr 1fr 2fr;
                 grid-template-areas:
-            "photo h1"
-            "photo h3"
-            "photo contacts";
-                text-align: center;
-                padding: 0;
-                background: #c9c8c6;
+                    "photo h1"
+                    "photo h3"
+                    "photo contacts";
+                padding-bottom: 1px;
             }
 
             .photo {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
+                width: 120%;
+                list-style: none;
+                margin: 0;
+                padding: 0;
             }
 
             h1 {
-                font-size: 18px;
-                padding-left: 0;
+                font-size: 20px;
             }
 
-            h2, h3 {
-                font-size: 14px;
-                padding-left: 0;
+            h2 {
+                font-size: 15px;
+            }
+
+            h3 {
+                padding-left: 8px;
+            }
+
+            h4 {
+                padding-left: 3px;
+            }
+
+            p {
+                padding-left: 3px;
+            }
+
+            a {
+                padding-left: 8px;
+            }
+
+            .title .contacts a {
+                font-size: 0.6rem;
+            }
+
+            li {
+                font-size: 0.2rem;
             }
 
             .contacts {
-                grid-template-columns: 3fr 4fr 2fr 2fr;
-                text-align: center;
-                gap: 1px;
+                grid-area: contacts;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                margin: 2%;
+                transform: translateX(-20px);
             }
 
-            .contacts a {
-                font-size: 0.8rem;
+            .contacts_items {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                margin: 2%;
+                padding: 0;
+            }
+
+            .contacts__text {
+                margin-left: -5px;
             }
 
             .wrapper {
+                width: 98%;
+                grid-area: wrapper;
+                background: #e5e7e9;
+                padding: 0;
+                display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: repeat(10, auto);
-                padding: 1px;
-            }
-
-            section {
-                padding: 1px;
-            }
-
-            p, h4, h5, a {
-                font-size: 1rem;
-                padding-left: 0;
-            }
-
-            .chart .pipe {
-                height: 8px;
+                grid-template-rows: 2fr 6fr 6fr 5fr 2fr 2fr 2fr 2fr 2fr 2fr;
+                grid-template-areas:
+                    "Skills"
+                    "Education"
+                    "Employment"
+                    "Profile"
+                    "Links"
+                    "Courses"
+                    "Languages"
+                    "IndividualSection"
+                    "Hobbies"
+                    "SoftSkill";
+                gap: 5px;
+                white-space: normal;
+                overflow-y: scroll;
             }
         }
 
