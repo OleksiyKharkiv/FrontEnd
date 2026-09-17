@@ -1,0 +1,99 @@
+@import 'tailwindcss';
+
+/* Self-hosted fonts (not Google Fonts CDN — avoids sending visitor IPs to
+   Google without consent; same DSGVO reasoning applied on tlab29.com). */
+@import '@fontsource/space-grotesk/500.css';
+@import '@fontsource/space-grotesk/600.css';
+@import '@fontsource/space-grotesk/700.css';
+@import '@fontsource/ibm-plex-sans/400.css';
+@import '@fontsource/ibm-plex-sans/500.css';
+@import '@fontsource/ibm-plex-sans/600.css';
+
+/*
+  Personal-site design tokens.
+  Dark is the default (developer-portfolio convention); a light override
+  lives under [data-theme="light"] with the same variable names, so every
+  component keeps using the same bg/text/accent classes unchanged.
+
+  Contrast checked against the real WCAG relative-luminance formula (not
+  eyeballed) — same discipline as numi's NUMI-142 token fix:
+    dark  text/bg        15.36:1   dark  text-dim/bg   7.16:1
+    dark  accent/bg       8.22:1   dark  code/bg       10.42:1
+    light text/bg        15.89:1   light text-dim/bg    6.43:1
+    light accent/bg       5.05:1   light code/bg         5.98:1
+  All comfortably clear WCAG 2.2 AA's 4.5:1 for normal text.
+*/
+@theme {
+	--color-bg: #15141a;
+	--color-bg-2: #1c1b22;
+	--color-surface: #1f1e26;
+	--color-border: #2c2b35;
+	--color-text: #eceaf2;
+	--color-text-dim: #a3a0b0;
+	--color-accent: #f2994a;
+	--color-accent-deep: #c9762e;
+	--color-code: #7dd3c0;
+
+	--font-display: 'Space Grotesk', sans-serif;
+	--font-body: 'IBM Plex Sans', sans-serif;
+
+	/* Breakpoint ladder — named literally by pixel width, not by a category
+	   label, mirroring the lesson documented in Lebens Rhythmus's
+	   RESPONSIVE_SCALING_PLAYBOOK.md: Tailwind's named breakpoints and
+	   custom --breakpoint-* additions do NOT sort into one list, so this
+	   ladder deliberately avoids mixing with sm:/md:/lg:/xl:/2xl: anywhere. */
+	--breakpoint-480: 480px;
+	--breakpoint-768: 768px;
+	--breakpoint-1024: 1024px;
+	--breakpoint-1440: 1440px;
+}
+
+:root[data-theme='light'] {
+	--color-bg: #f7f5f2;
+	--color-bg-2: #eeebe6;
+	--color-surface: #ffffff;
+	--color-border: #ddd8d0;
+	--color-text: #1b1a1f;
+	--color-text-dim: #5b5766;
+	--color-accent: #9c5818;
+	--color-accent-deep: #7a4512;
+	--color-code: #0e6a5a;
+}
+
+html {
+	background: var(--color-bg);
+	color-scheme: dark;
+}
+
+html[data-theme='light'] {
+	color-scheme: light;
+}
+
+body {
+	background: var(--color-bg);
+	color: var(--color-text);
+	font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-display);
+}
+
+code,
+.mono {
+	font-family: 'IBM Plex Mono', ui-monospace, monospace;
+	color: var(--color-code);
+}
+
+@media print {
+	body {
+		background: #fff;
+		color: #000;
+	}
+	.no-print {
+		display: none !important;
+	}
+}

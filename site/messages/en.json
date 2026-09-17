@@ -1,0 +1,77 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+
+	"meta_title": "Oleksiy Khudoshyn — Backend Developer",
+	"meta_description": "Backend developer (Java/Spring Boot, Go). Designs, builds and self-hosts production systems: Numi and Lebens Rhythmus / tlab29.com.",
+
+	"nav_summary": "About",
+	"nav_experience": "Experience",
+	"nav_projects": "Projects",
+	"nav_skills": "Skills",
+	"nav_education": "Education",
+	"nav_contact": "Contact",
+
+	"theme_toggle_label": "Toggle color theme",
+	"lang_switch_label": "Language",
+	"print_button": "Save as PDF",
+
+	"hero_role": "Backend Developer · Java/Spring Boot · Go",
+	"hero_tagline": "Kubernetes & CI/CD on my own infrastructure",
+	"hero_location": "Bergheim, Germany",
+
+	"summary_title": "About",
+	"summary_p1": "Backend developer re-entering IT after several years managing business teams in e-commerce and public tendering. My foundation is engineering (Kharkiv Aviation University, Dipl.-Ing.) — Tel-Ran.de's IT school brought me back to what interested me since I was young: how systems work underneath the surface.",
+	"summary_p2": "Alongside my experience at Light Digital Solutions GmbH and Medcol.io, I run two production projects on my own home infrastructure (Proxmox, Debian 12, GitLab CI/CD): Numi and Lebens Rhythmus / tlab29.com. I maintain both myself, including recovering from a real infrastructure outage.",
+	"summary_quip": "// old habit: still think in Java-flavoured pseudocode when nobody's looking.",
+
+	"skills_title": "Skills",
+	"skills_items": "Java, Spring Boot · Go · PostgreSQL, MySQL, SQLite, MongoDB · REST API · Spring Security, JWT · Docker, Kubernetes (k3s) · GitLab CI/CD · Maven, Gradle · JUnit, Testcontainers · Swagger, Postman · Microsoft Azure, Power BI · Jira, Asana · Kotlin (basic, AI-assisted)",
+
+	"experience_title": "Experience",
+
+	"exp1_role": "Trainee DevOps Engineer",
+	"exp1_meta": "Light Digital Solutions GmbH, Hürth · 03/2024 – 02/2025",
+	"exp1_body": "Co-responsible for supporting a telecom client's web application within an agile Scrum team (Jira). Go microservices (entry-level, infrastructure-as-code), maintained a Kotlin mobile app, migrated data between MongoDB and MS SQL Server (incl. restoring BSON dumps), built Power BI reports, worked with Microsoft Azure. Also mentored a student intern on APIs and backend-frontend data exchange.",
+
+	"exp2_role": "Backend Java Developer (Internship)",
+	"exp2_meta": "Medcol FZCO — \"Medical Atlas\" project · Oct 9 – Dec 18, 2023",
+	"exp2_body": "Sole backend developer on the project, from first line of code to the internal MVP. Java/Spring, JWT auth, Swagger, NHibernate. Recommended by the CTO for communication skills and eagerness to learn.",
+
+	"exp3_role": "Back End Java Engineer (Trainee)",
+	"exp3_meta": "Tel-Ran.de · 07/2022 – 05/2023",
+	"exp3_body": "Built a banking web application (back-end) in Spring with a MySQL connection, including tests.",
+
+	"exp4_role": "Managing Director",
+	"exp4_meta": "Polysan Ukraine PE, Kharkiv · 06/2014 – 02/2022",
+	"exp4_body": "Led business teams in e-commerce and public tendering.",
+
+	"projects_title": "Projects",
+
+	"proj_numi_title": "Numi",
+	"proj_numi_meta": "GoBD-compliant invoicing PWA · since 2025",
+	"proj_numi_body": "Designed and built end-to-end, solo: Go backend, SvelteKit frontend, SQLite (WAL) with Litestream replication, JWT auth, PDF generation. Deployed on my own infrastructure — Proxmox/Debian 12, Docker, GitLab CI/CD, Cloudflare Tunnel. Active beta client.",
+	"proj_numi_link": "numi.report",
+
+	"proj_lr_title": "Lebens Rhythmus / tlab29.com",
+	"proj_lr_meta": "Creative-arts studio platform · since 2023",
+	"proj_lr_body": "Designed and operated end-to-end: Java/Spring Boot, PostgreSQL, SvelteKit frontend, Kubernetes (k3s) with Traefik, GitLab CI/CD, Cloudflare Tunnel — on my own Proxmox/Debian 12 infrastructure. Recovered it myself after a real infrastructure outage (cascading failures).",
+	"proj_lr_link": "tlab29.com",
+
+	"education_title": "Education",
+	"edu1_title": "IT school",
+	"edu1_body": "Tel-Ran.de, Berlin",
+	"edu2_title": "University",
+	"edu2_body": "Kharkiv Aviation University (KhAI), Dipl.-Ing.",
+	"edu3_title": "Secondary education",
+	"edu3_body": "Physics & Mathematics Lyceum, Zhovti Vody",
+
+	"languages_title": "Languages",
+	"lang_de": "German — B1 (certified)",
+	"lang_en": "English — good",
+	"lang_uk": "Ukrainian — native",
+	"lang_ru": "Russian — native",
+
+	"contact_title": "Contact",
+	"contact_open": "Open to Junior+/Middle Backend/Fullstack roles in Düsseldorf, Köln and NRW.",
+	"footer_consent": "I consent to the processing of my personal data for the purpose of recruitment for the position to which I am applying."
+}

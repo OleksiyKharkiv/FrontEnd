@@ -1,0 +1,77 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+
+	"meta_title": "Oleksiy Khudoshyn — Backend-Entwickler",
+	"meta_description": "Backend-Entwickler (Java/Spring Boot, Go). Baut und hostet selbst Production-Systeme: Numi und Lebens Rhythmus / tlab29.com.",
+
+	"nav_summary": "Über mich",
+	"nav_experience": "Erfahrung",
+	"nav_projects": "Projekte",
+	"nav_skills": "Skills",
+	"nav_education": "Ausbildung",
+	"nav_contact": "Kontakt",
+
+	"theme_toggle_label": "Farbschema wechseln",
+	"lang_switch_label": "Sprache",
+	"print_button": "Als PDF",
+
+	"hero_role": "Backend-Entwickler · Java/Spring Boot · Go",
+	"hero_tagline": "Kubernetes & CI/CD auf eigener Infrastruktur",
+	"hero_location": "Bergheim, Deutschland",
+
+	"summary_title": "Über mich",
+	"summary_p1": "Backend-Entwickler mit Wiedereinstieg in die IT nach mehreren Jahren im Management von Geschäftsteams im E-Commerce- und Vergabebereich. Meine Basis ist ingenieurwissenschaftlich (Nationale Luft- und Raumfahrtuniversität Charkiw, Diplom-Ingenieur) — über die IT-Schule Tel-Ran.de bin ich zu dem zurückgefunden, was mich schon in jungen Jahren interessiert hat: wie Systeme unter der Oberfläche funktionieren.",
+	"summary_p2": "Neben der Erfahrung bei Light Digital Solutions GmbH und Medcol.io betreibe ich zwei eigene Production-Projekte auf meiner privaten Infrastruktur (Proxmox, Debian 12, GitLab CI/CD): Numi und Lebens Rhythmus / tlab29.com. Beide Systeme betreue ich eigenständig, inklusive Wiederherstellung nach einem realen Infrastrukturausfall.",
+	"summary_quip": "// alte Angewohnheit: denke immer noch in Java-artigem Pseudocode, wenn niemand zusieht.",
+
+	"skills_title": "Skills",
+	"skills_items": "Java, Spring Boot · Go · PostgreSQL, MySQL, SQLite, MongoDB · REST API · Spring Security, JWT · Docker, Kubernetes (k3s) · GitLab CI/CD · Maven, Gradle · JUnit, Testcontainers · Swagger, Postman · Microsoft Azure, Power BI · Jira, Asana · Kotlin (Grundkenntnisse, KI-unterstützt)",
+
+	"experience_title": "Erfahrung",
+
+	"exp1_role": "Trainee DevOps Engineer",
+	"exp1_meta": "Light Digital Solutions GmbH, Hürth · 03/2024 – 02/2025",
+	"exp1_body": "Mitverantwortlich für die Betreuung einer Web-Applikation eines Telekommunikationskunden im agilen SCRUM-Team (Jira). Go-Mikrodienste (Einsteiger-Level, Infrastructure as Code), Wartung einer mobilen Anwendung in Kotlin, Datenmigration zwischen MongoDB und MS SQL Server inkl. Wiederherstellung aus BSON-Dumps, Power-BI-Reports, Microsoft Azure. Betreute zusätzlich einen Schülerpraktikanten zum Thema APIs/Backend-Frontend-Datenaustausch.",
+
+	"exp2_role": "Backend Java Developer (Praktikum)",
+	"exp2_meta": "Medcol FZCO — Projekt „Medical Atlas“ · 09.10. – 18.12.2023",
+	"exp2_body": "Alleiniger Backend-Entwickler des Projekts, von der ersten Zeile Code bis zum internen MVP. Java/Spring, JWT-Auth, Swagger, NHibernate. Vom CTO für Kommunikationsstärke und Lernbereitschaft empfohlen.",
+
+	"exp3_role": "Back End Java Engineer (Trainee)",
+	"exp3_meta": "Tel-Ran.de · 07/2022 – 05/2023",
+	"exp3_body": "Aufbau einer Banking-Webanwendung (Backend) mit Spring und MySQL-Anbindung, inkl. Tests.",
+
+	"exp4_role": "Geschäftsführer",
+	"exp4_meta": "Polysan Ukraine PE, Kharkiv · 06/2014 – 02/2022",
+	"exp4_body": "Leitung von Geschäftsteams im Bereich E-Commerce und öffentliche Vergabeverfahren.",
+
+	"projects_title": "Projekte",
+
+	"proj_numi_title": "Numi",
+	"proj_numi_meta": "GoBD-konforme Rechnungs-PWA · seit 2025",
+	"proj_numi_body": "Vollständig selbst entworfen und entwickelt: Go-Backend, SvelteKit-Frontend, SQLite (WAL) mit Litestream-Replikation, JWT-Auth, PDF-Generierung. Deployment auf eigener Infrastruktur — Proxmox/Debian 12, Docker, GitLab CI/CD, Cloudflare Tunnel. Aktiver Beta-Kunde.",
+	"proj_numi_link": "numi.report",
+
+	"proj_lr_title": "Lebens Rhythmus / tlab29.com",
+	"proj_lr_meta": "Plattform für ein Kreativstudio · seit 2023",
+	"proj_lr_body": "Selbst entworfen und betrieben: Java/Spring Boot, PostgreSQL, SvelteKit-Frontend, Kubernetes (k3s) mit Traefik, GitLab CI/CD, Cloudflare Tunnel — auf eigener Proxmox/Debian-12-Infrastruktur. Wiederherstellung nach einem realen Infrastrukturausfall (Stromausfall mit Kaskadenfolgen) selbst durchgeführt.",
+	"proj_lr_link": "tlab29.com",
+
+	"education_title": "Ausbildung",
+	"edu1_title": "IT-Schule",
+	"edu1_body": "Tel-Ran.de, Berlin",
+	"edu2_title": "Hochschule",
+	"edu2_body": "Nationale Luft- und Raumfahrtuniversität Charkiw (KhAI), Diplom-Ingenieur",
+	"edu3_title": "Sekundarbildung",
+	"edu3_body": "Physik-Mathematik-Lyzeum, Zhovti Vody",
+
+	"languages_title": "Sprachen",
+	"lang_de": "Deutsch — B1 (zertifiziert)",
+	"lang_en": "Englisch — gut",
+	"lang_uk": "Ukrainisch — Muttersprache",
+	"lang_ru": "Russisch — Muttersprache",
+
+	"contact_title": "Kontakt",
+	"contact_open": "Offen für Junior+/Middle-Positionen im Backend/Fullstack-Bereich in Düsseldorf, Köln und NRW.",
+	"footer_consent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten für die Zwecke der Bewerbung auf die Position zu, für die ich mich bewerbe."
+}
