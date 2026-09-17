@@ -1,6 +1,7 @@
 <script lang="ts">
 	import * as m from '$lib/paraglide/messages';
 	import InfraDiagram from '$lib/components/InfraDiagram.svelte';
+	import StatusBadge from '$lib/components/StatusBadge.svelte';
 	import { contact } from '$lib/contact';
 
 	const skills = $derived(m.skills_items().split(' · '));
@@ -77,9 +78,12 @@
 				vm="Proxmox · Debian 12 VM"
 			/>
 		</div>
-		<a class="text-accent mt-3 inline-block text-sm hover:underline" href="https://numi.report/" target="_blank" rel="noreferrer">
-			{m.proj_numi_link()} →
-		</a>
+		<div class="mt-3 flex items-center gap-3">
+			<a class="text-accent text-sm hover:underline" href="https://numi.report/" target="_blank" rel="noreferrer">
+				{m.proj_numi_link()} →
+			</a>
+			<StatusBadge url="https://numi.report/" />
+		</div>
 	</article>
 
 	<article class="border-border bg-surface rounded-xl border p-5">
@@ -92,9 +96,12 @@
 				vm="Proxmox · Debian 12 VM"
 			/>
 		</div>
-		<a class="text-accent mt-3 inline-block text-sm hover:underline" href="https://tlab29.com/" target="_blank" rel="noreferrer">
-			{m.proj_lr_link()} →
-		</a>
+		<div class="mt-3 flex items-center gap-3">
+			<a class="text-accent text-sm hover:underline" href="https://tlab29.com/" target="_blank" rel="noreferrer">
+				{m.proj_lr_link()} →
+			</a>
+			<StatusBadge url="https://tlab29.com/" />
+		</div>
 	</article>
 </section>
 
@@ -103,6 +110,7 @@
 		{m.education_title()}
 	</h2>
 	<dl class="space-y-2 text-sm">
+		<div><dt class="text-text inline font-600">{m.edu0_title()}:</dt> <dd class="text-text-dim inline">{m.edu0_body()}</dd></div>
 		<div><dt class="text-text inline font-600">{m.edu1_title()}:</dt> <dd class="text-text-dim inline">{m.edu1_body()}</dd></div>
 		<div><dt class="text-text inline font-600">{m.edu2_title()}:</dt> <dd class="text-text-dim inline">{m.edu2_body()}</dd></div>
 		<div><dt class="text-text inline font-600">{m.edu3_title()}:</dt> <dd class="text-text-dim inline">{m.edu3_body()}</dd></div>

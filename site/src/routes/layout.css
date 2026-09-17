@@ -33,6 +33,7 @@
 	--color-accent: #f2994a;
 	--color-accent-deep: #c9762e;
 	--color-code: #7dd3c0;
+	--color-error: #e2574c;
 
 	--font-display: 'Space Grotesk', sans-serif;
 	--font-body: 'IBM Plex Sans', sans-serif;
@@ -58,6 +59,7 @@
 	--color-accent: #9c5818;
 	--color-accent-deep: #7a4512;
 	--color-code: #0e6a5a;
+	--color-error: #b23b32;
 }
 
 html {

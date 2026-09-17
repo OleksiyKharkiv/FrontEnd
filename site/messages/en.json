@@ -14,13 +14,17 @@
 	"theme_toggle_label": "Toggle color theme",
 	"lang_switch_label": "Language",
 	"print_button": "Save as PDF",
+	"status_checking": "checking …",
+	"status_online": "online right now",
+	"status_unreachable": "unreachable",
+	"status_check_note": "Live check from your browser, not a screenshot.",
 
 	"hero_role": "Backend Developer · Java/Spring Boot · Go",
 	"hero_tagline": "Kubernetes & CI/CD on my own infrastructure",
 	"hero_location": "Bergheim, Germany",
 
 	"summary_title": "About",
-	"summary_p1": "Backend developer re-entering IT after several years managing business teams in e-commerce and public tendering. My foundation is engineering (Kharkiv Aviation University, Dipl.-Ing.) — Tel-Ran.de's IT school brought me back to what interested me since I was young: how systems work underneath the surface.",
+	"summary_p1": "Backend developer re-entering IT, with a technical foundation (Kharkiv Aviation University, Dipl.-Ing.) and AFP Akademie Köln (IHK-certified further-education program).",
 	"summary_p2": "Alongside my experience at Light Digital Solutions GmbH and Medcol.io, I run two production projects on my own home infrastructure (Proxmox, Debian 12, GitLab CI/CD): Numi and Lebens Rhythmus / tlab29.com. I maintain both myself, including recovering from a real infrastructure outage.",
 	"summary_quip": "// old habit: still think in Java-flavoured pseudocode when nobody's looking.",
 
@@ -58,6 +62,8 @@
 	"proj_lr_link": "tlab29.com",
 
 	"education_title": "Education",
+	"edu0_title": "Further education",
+	"edu0_body": "AFP Akademie Köln (IHK-certified program)",
 	"edu1_title": "IT school",
 	"edu1_body": "Tel-Ran.de, Berlin",
 	"edu2_title": "University",

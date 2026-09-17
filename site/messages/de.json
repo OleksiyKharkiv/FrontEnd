@@ -14,13 +14,17 @@
 	"theme_toggle_label": "Farbschema wechseln",
 	"lang_switch_label": "Sprache",
 	"print_button": "Als PDF",
+	"status_checking": "prüfe …",
+	"status_online": "gerade online",
+	"status_unreachable": "nicht erreichbar",
+	"status_check_note": "Live-Check aus deinem Browser, kein Screenshot.",
 
 	"hero_role": "Backend-Entwickler · Java/Spring Boot · Go",
 	"hero_tagline": "Kubernetes & CI/CD auf eigener Infrastruktur",
 	"hero_location": "Bergheim, Deutschland",
 
 	"summary_title": "Über mich",
-	"summary_p1": "Backend-Entwickler mit Wiedereinstieg in die IT nach mehreren Jahren im Management von Geschäftsteams im E-Commerce- und Vergabebereich. Meine Basis ist ingenieurwissenschaftlich (Nationale Luft- und Raumfahrtuniversität Charkiw, Diplom-Ingenieur) — über die IT-Schule Tel-Ran.de bin ich zu dem zurückgefunden, was mich schon in jungen Jahren interessiert hat: wie Systeme unter der Oberfläche funktionieren.",
+	"summary_p1": "Backend-Entwickler mit Wiedereinstieg in die IT, mit technischem Fundament (Nationale Luft- und Raumfahrtuniversität Charkiw, Diplom-Ingenieur) und AFP Akademie Köln (IHK-zertifizierte Weiterbildung).",
 	"summary_p2": "Neben der Erfahrung bei Light Digital Solutions GmbH und Medcol.io betreibe ich zwei eigene Production-Projekte auf meiner privaten Infrastruktur (Proxmox, Debian 12, GitLab CI/CD): Numi und Lebens Rhythmus / tlab29.com. Beide Systeme betreue ich eigenständig, inklusive Wiederherstellung nach einem realen Infrastrukturausfall.",
 	"summary_quip": "// alte Angewohnheit: denke immer noch in Java-artigem Pseudocode, wenn niemand zusieht.",
 
@@ -58,6 +62,8 @@
 	"proj_lr_link": "tlab29.com",
 
 	"education_title": "Ausbildung",
+	"edu0_title": "Weiterbildung",
+	"edu0_body": "AFP Akademie Köln (IHK-zertifiziert)",
 	"edu1_title": "IT-Schule",
 	"edu1_body": "Tel-Ran.de, Berlin",
 	"edu2_title": "Hochschule",
