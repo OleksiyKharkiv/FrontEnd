@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khudoshyn Oleksiy BE</title>
+    <meta name="description" content="Oleksiy Khudoshyn — Backend Developer (Java/Spring Boot, Go). Builds and self-hosts production systems: Numi (GoBD-compliant invoicing PWA) and Lebens Rhythmus / tlab29.com."/>
+    <meta property="og:title" content="Oleksiy Khudoshyn — Backend Developer"/>
+    <meta property="og:description" content="Java/Spring Boot &amp; Go backend developer. Self-hosted production projects: Numi, Lebens Rhythmus / tlab29.com."/>
+    <meta property="og:image" content="Alex_1_1_1.JPG"/>
+    <meta property="og:type" content="profile"/>
     <link rel="stylesheet"
           href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
 
@@ -13,9 +18,13 @@
         @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;900&display=swap");
 
         html,
-        body,
-        .wrapper {
+        body {
             height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+
+        .wrapper {
             width: 100%;
             margin: 0;
         }
@@ -119,7 +128,7 @@
         .contacts {
             grid-area: contacts;
             display: grid;
-            grid-template-columns: 3fr 3fr 2fr 2fr;
+            grid-template-columns: 3fr 2fr 2fr;
             margin-bottom: 0;
         }
 
@@ -161,7 +170,7 @@
         .Profile,
         .Skills,
         .Employment,
-        .Courses,
+        .Projects,
         .Languages,
         .IndividualSection,
         .Hobbies,
@@ -202,12 +211,12 @@
             padding: 0;
             display: grid;
             grid-template-columns: 3fr 4fr;
-            grid-template-rows: 575px 255px 455px;
+            grid-template-rows: auto auto auto;
             grid-template-areas:
                 "Skills Profile"
                 "Education Links"
                 "Employment Languages"
-                "Courses  Hobbies";
+                "Projects  Hobbies";
             gap: 10px;
             overflow-y: scroll;
         }
@@ -236,8 +245,8 @@
             grid-area: Skills;
         }
 
-        .Courses {
-            grid-area: Courses;
+        .Projects {
+            grid-area: Projects;
         }
 
         .Languages {
@@ -392,7 +401,7 @@
             .contacts {
                 grid-area: contacts;
                 display: grid;
-                grid-template-columns: 4fr 4fr 3fr 4fr;
+                grid-template-columns: 4fr 3fr 4fr;
                 padding-inline-start: -1px;
                 margin: 1%;
                 padding-left: 5px;
@@ -424,7 +433,7 @@
                     "Employment"
                     "Profile"
                     "Links"
-                    "Courses"
+                    "Projects"
                     "Languages"
                     "IndividualSection"
                     "Hobbies"
@@ -445,7 +454,7 @@
         <img style="width: 90%; margin-top: -25px;" src="Alex_1_1_1.JPG" alt="">
     </div>
     <h1>OLEKSIY KHUDOSHYN</h1>
-    <h2> Java Backend Developer</h2>
+    <h2> Backend Developer · Java/Spring Boot · Go</h2>
     <ul class="contacts">
         <li class="contacts_item">
                 <span class="icon">
@@ -466,15 +475,6 @@
 </span>
         </li>
         <li class="contacts_item">
-    <span class="icon">
-        <img src="https://img.icons8.com/ios-glyphs/20/000000/skype.png" alt=""/>
-    </span>
-            <span class="contacts__text">
-        <a href="skype:hudoshin?call">hudoshin</a>
-    </span>
-        </li>
-
-        <li class="contacts_item">
                 <span class="icon">
                     <img src="https://img.icons8.com/ios-filled/20/000000/marker.png" alt=""/>
                 </span>
@@ -489,48 +489,34 @@
     <section class="Skills">
         <h3> Skills</h3>
         <div class="chart">
-            <p>• Java Spring Boot</p>
-            <p>• GoLang (Basic)</p>
-            <p>• RESTful API and Web Services</p>
-            <p>• Database Skills (PostgreSQL, MySQL, MS SQL S, MongoDB)</p>
-            <p>• Spring Security and Authentication</p>
-            <p>• Maven, Gradle </p>
-            <p>• JUnit Tests</p>
+            <p>• Java, Spring Boot</p>
+            <p>• Go</p>
+            <p>• PostgreSQL, MySQL, SQLite, MongoDB</p>
+            <p>• REST API &amp; Web Services</p>
+            <p>• Spring Security, JWT</p>
+            <p>• Docker, Kubernetes (k3s)</p>
+            <p>• GitLab CI/CD</p>
+            <p>• Maven, Gradle</p>
+            <p>• JUnit, Testcontainers</p>
             <p>• Swagger, Postman</p>
-            <p>• Docker </p>
-            <p>• Kubernetes (basic)</p>
-            <p>• Jira, Asana, MS PowerBI</p>
+            <p>• Microsoft Azure, Power BI</p>
+            <p>• Jira, Asana</p>
+            <p>• Kotlin (basic, AI-assisted)</p>
         </div>
     </section>
 
     <section class="Profile">
-        <h3>Summary (in Java-style)</h3>
-        <pre><code>   public class Summary {
-            String background = "Physics and Mathematics Lyceum";
-            String technicality = "Engineering education, IT School";
-            String softSkillsPackage = "Experience in creating and managing an e-commerce store, crisis and time management";
-                    
-            public static void main(String[] args) {
-                String thatIlove1 = "to design";
-                String thatIlove2 = "Draw";
-                String thatIlove4 = "I can see the unusual in the ordinary";
-                String result = inWorkIAmBetterRealizedInATeam();
-            }
-            public static void inWorkIAmBetterRealizedInATeam() {
-                SoftSkills experienceInCriticalSituations = new SoftSkills(ManagmentSkill, commerceSkill);
-                switch (ifYouWereEaten) {
-                    case 1:
-                        exitUp;
-                        break;
-                    case 2:
-                        exitDown;
-                        break;
-                    default:
-                        System.out.println("Team wins, everyone wins!");
-                        break;
-                }
-            }
-        }</code></pre>
+        <h3>Summary</h3>
+        <p>Backend developer re-entering IT after several years managing business teams in e-commerce and public
+            tendering. Foundation: aerospace engineering (Kharkiv Aviation University, Dipl.-Ing.) — Tel-Ran.de's
+            IT school brought me back to what interested me since I was young: how systems work underneath the
+            surface.</p>
+        <p>Alongside my experience at Light Digital Solutions GmbH and Medcol.io, I design, build and operate two
+            production systems on my own home server infrastructure (Proxmox, Debian 12, GitLab CI/CD): <b>Numi</b>
+            — a GoBD-compliant invoicing PWA (Go + SvelteKit, Docker) — and <b>Lebens Rhythmus / tlab29.com</b> —
+            a platform for a creative-arts studio (Java/Spring Boot, PostgreSQL, Kubernetes/k3s).</p>
+        <p style="font-style: italic;">// old habit: still think in Java-flavoured pseudocode when nobody's
+            looking.</p>
     </section>
 
     <section class="Education">
@@ -556,22 +542,19 @@
 
     <section class="Employment">
         <h3> Employment</h3>
-        <h4>Trainee DevOps, Light Digital Solutions GmbH, Hürth (March 2024-Feb 2025)</h4>
-        <p> Collaborated in 10-day sprints with the MATS development team, focusing on feature implementation and
-            bug fixing for a training platform with 20,000+ users (Kotlin, Go, GitLab, Jira, Swagger, and Postman)
-            Data restoration from DB dumps, filtering and processing in MongoDB, export to MS SQL, followed by export
-            to reports I developed in MS Power BI. Assisted in improving server infrastructure under the guidance
-            of the team lead, contributed to migration features for Google Cloud as a junior developer.
-            <br><a href="https://mats.coach/"> MATS</a>
-            <a href="https://light-digital.solutions/">Light Digital Solutions GmbH</a>
+        <h4>Trainee DevOps Engineer, Light Digital Solutions GmbH, Hürth (March 2024-Feb 2025)</h4>
+        <p> Co-responsible for supporting a telecom client's web application within an agile Scrum team (Jira).
+            Developed Go microservices (entry-level, infrastructure-as-code) and maintained a Kotlin mobile app.
+            Migrated data between MongoDB and MS SQL Server, including restoring BSON dumps, and built Power BI
+            reports for the business team. Worked with Microsoft Azure cloud services. Mentored a student intern
+            on APIs and backend-frontend data exchange.
+            <br><a href="https://light-digital.solutions/">Light Digital Solutions GmbH</a>
         </p>
-        <h4>Back End Java Developer, Medcol.io "Medical Atlas" project (Sept 2023-Jan 2024)</h4>
-        <p> Development of the server part of the application (back-end) in Spring with a database (PostgeSQL)
-            connection, authorization, deployment to GitLab, unit-tests. MedAtlas is an interactive Medical Atlas
-            designed for doctors, researchers, and medical students.
-            It allows for the use and extension of a core library of data that contains a cataloged database of
-            anatomical structures, which are tied to research subjects.
-
+        <h4>Backend Java Developer (Internship), Medcol FZCO — "Medical Atlas" project (Oct 9 - Dec 18, 2023)</h4>
+        <p> Sole backend developer on the project, from first line of code to the internal MVP. Java/Spring,
+            database (PostgreSQL) integration, JWT authentication, Swagger documentation, NHibernate, unit tests.
+            MedAtlas is an interactive Medical Atlas designed for doctors, researchers, and medical students —
+            a cataloged database of anatomical structures tied to research subjects.
             <br><a href="https://github.com/OleksiyKharkiv/MedAtlas">GitHub link , </a>
             <a href="https://medcol.io/">Medcol.io</a>
         </p>
@@ -581,13 +564,9 @@
             <a href="https://github.com/OleksiyKharkiv/GutBank">GitHub link</a><br>
             <a href="https://tel-ran.de/">Tel-Ran.de</a>
         </p>
-        <h4>Director (06.2014...02.2022)</h4>
-        <p>State tenders. Participation in 1043 tenders, 521 wins. The total amount of contracts is UAH 29.450.000,00 </p>
+        <h4>Managing Director (06.2014-02.2022)</h4>
+        <p>Led business teams in e-commerce and public tendering.</p>
         <a href="https://clarity-project.info/tenderer/36455711">Polysan Ukraine PE, Kharkiv</a>
-        <!--        <h4>Director (10.2005...05.2014) </h4>-->
-        <!--        <p>Trading business management. Wholesale/retail/import (building materials/sanitareware). 3 shops, 2-->
-        <!--            website, warehouse, logistics department (3 trucks), 46 employees.</p>-->
-        <!--        <a href="">Maxigroup Ltd., Kharkiv</a>-->
     </section>
 
     <section class="Languages">
@@ -625,17 +604,19 @@
         </div>
     </section>
 
-    <!-- <section class="Courses">
-        <h3> Courses</h3>
-        <h4>IT (FE, BE, QA) TelRan</h4>
-        <a href="https://tel-ran.de/">Tel-Ran</a>
+    <section class="Projects">
+        <h3> Projects</h3>
+        <h4>Numi — GoBD-compliant invoicing PWA (2025-present)</h4>
+        <p>Designed and built end-to-end, solo: Go backend, SvelteKit frontend, SQLite (WAL) with Litestream
+            replication, JWT auth, PDF generation. Deployed on my own infrastructure — Proxmox/Debian 12, Docker,
+            GitLab CI/CD, Cloudflare Tunnel. Active beta client.</p>
+        <h4>Lebens Rhythmus / tlab29.com — creative-arts studio platform (2023-present)</h4>
+        <p>Designed and operated end-to-end: Java/Spring Boot, PostgreSQL, SvelteKit frontend, Kubernetes (k3s)
+            with Traefik, GitLab CI/CD, Cloudflare Tunnel — on my own Proxmox/Debian 12 infrastructure. Recovered
+            it myself after a real infrastructure outage (cascading failures).
+            <br><a href="https://tlab29.com/">tlab29.com</a>
+        </p>
     </section>
-
-    <section class="IndividualSection">
-        <h3> IndividualSection</h3>
-        Married, 3 wonderful children, jogging partner Jack Russell Terrier dog.
-        Mobile (personal car, driving license category B)
-    </section> -->
 
 </div>
 
