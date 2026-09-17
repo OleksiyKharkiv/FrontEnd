@@ -4,12 +4,9 @@
 	"meta_title": "Oleksiy Khudoshyn — Backend-Entwickler",
 	"meta_description": "Backend-Entwickler (Java/Spring Boot, Go). Baut und hostet selbst Production-Systeme: Numi und Lebens Rhythmus / tlab29.com.",
 
-	"nav_summary": "Über mich",
+	"nav_about": "Über mich",
 	"nav_experience": "Erfahrung",
 	"nav_projects": "Projekte",
-	"nav_skills": "Skills",
-	"nav_education": "Ausbildung",
-	"nav_contact": "Kontakt",
 
 	"theme_toggle_label": "Farbschema wechseln",
 	"lang_switch_label": "Sprache",
@@ -35,19 +32,23 @@
 
 	"exp1_role": "Trainee DevOps Engineer",
 	"exp1_meta": "Light Digital Solutions GmbH, Hürth · 03/2024 – 02/2025",
-	"exp1_body": "Mitverantwortlich für die Betreuung einer Web-Applikation eines Telekommunikationskunden im agilen SCRUM-Team (Jira). Go-Mikrodienste (Einsteiger-Level, Infrastructure as Code), Wartung einer mobilen Anwendung in Kotlin, Datenmigration zwischen MongoDB und MS SQL Server inkl. Wiederherstellung aus BSON-Dumps, Power-BI-Reports, Microsoft Azure. Betreute zusätzlich einen Schülerpraktikanten zum Thema APIs/Backend-Frontend-Datenaustausch.",
+	"exp1_bullet1": "Mitverantwortlich für die Betreuung einer Web-Applikation eines Telekommunikationskunden im agilen Scrum-Team (Jira).",
+	"exp1_bullet2": "Go-Mikrodienste entwickelt und eine Kotlin-App gewartet; MongoDB-Daten nach MS SQL Server migriert und Power-BI-Reports auf Microsoft Azure erstellt.",
+	"exp1_bullet3": "Einen Schülerpraktikanten zu APIs und Backend-Frontend-Datenaustausch betreut.",
 
 	"exp2_role": "Backend Java Developer (Praktikum)",
 	"exp2_meta": "Medcol FZCO — Projekt „Medical Atlas“ · 09.10. – 18.12.2023",
-	"exp2_body": "Alleiniger Backend-Entwickler des Projekts, von der ersten Zeile Code bis zum internen MVP. Java/Spring, JWT-Auth, Swagger, NHibernate. Vom CTO für Kommunikationsstärke und Lernbereitschaft empfohlen.",
+	"exp2_bullet1": "Alleiniger Backend-Entwickler des Projekts, von der ersten Zeile Code bis zum internen MVP.",
+	"exp2_bullet2": "Java/Spring-Backend mit JWT-Auth, Swagger-Dokumentation und NHibernate aufgebaut.",
+	"exp2_bullet3": "Vom CTO für Kommunikationsstärke und Lernbereitschaft empfohlen.",
 
 	"exp3_role": "Back End Java Engineer (Trainee)",
 	"exp3_meta": "Tel-Ran.de · 07/2022 – 05/2023",
-	"exp3_body": "Aufbau einer Banking-Webanwendung (Backend) mit Spring und MySQL-Anbindung, inkl. Tests.",
+	"exp3_bullet1": "Backend einer Banking-Webanwendung in Spring mit MySQL-Anbindung aufgebaut, inklusive Tests.",
 
 	"exp4_role": "Geschäftsführer",
 	"exp4_meta": "Polysan Ukraine PE, Kharkiv · 06/2014 – 02/2022",
-	"exp4_body": "Leitung von Geschäftsteams im Bereich E-Commerce und öffentliche Vergabeverfahren.",
+	"exp4_bullet1": "Geschäftsteams im Bereich E-Commerce und öffentliche Vergabeverfahren geleitet.",
 
 	"projects_title": "Projekte",
 
@@ -77,7 +78,7 @@
 	"lang_uk": "Ukrainisch — Muttersprache",
 	"lang_ru": "Russisch — Muttersprache",
 
-	"contact_title": "Kontakt",
-	"contact_open": "Offen für Junior+/Middle-Positionen im Backend/Fullstack-Bereich in Düsseldorf, Köln und NRW.",
+	"open_to_title": "Offen für",
+	"contact_open": "Junior+/Middle-Positionen im Backend/Fullstack-Bereich in Düsseldorf, Köln und NRW.",
 	"footer_consent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten für die Zwecke der Bewerbung auf die Position zu, für die ich mich bewerbe."
 }

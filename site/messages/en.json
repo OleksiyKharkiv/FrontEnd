@@ -4,12 +4,9 @@
 	"meta_title": "Oleksiy Khudoshyn — Backend Developer",
 	"meta_description": "Backend developer (Java/Spring Boot, Go). Designs, builds and self-hosts production systems: Numi and Lebens Rhythmus / tlab29.com.",
 
-	"nav_summary": "About",
+	"nav_about": "About",
 	"nav_experience": "Experience",
 	"nav_projects": "Projects",
-	"nav_skills": "Skills",
-	"nav_education": "Education",
-	"nav_contact": "Contact",
 
 	"theme_toggle_label": "Toggle color theme",
 	"lang_switch_label": "Language",
@@ -35,19 +32,23 @@
 
 	"exp1_role": "Trainee DevOps Engineer",
 	"exp1_meta": "Light Digital Solutions GmbH, Hürth · 03/2024 – 02/2025",
-	"exp1_body": "Co-responsible for supporting a telecom client's web application within an agile Scrum team (Jira). Go microservices (entry-level, infrastructure-as-code), maintained a Kotlin mobile app, migrated data between MongoDB and MS SQL Server (incl. restoring BSON dumps), built Power BI reports, worked with Microsoft Azure. Also mentored a student intern on APIs and backend-frontend data exchange.",
+	"exp1_bullet1": "Co-supported a telecom client's web application in an agile Scrum team (Jira).",
+	"exp1_bullet2": "Built Go microservices and maintained a Kotlin mobile app; migrated MongoDB data to MS SQL Server and built Power BI reports on Microsoft Azure.",
+	"exp1_bullet3": "Mentored a student intern on APIs and backend-frontend data exchange.",
 
 	"exp2_role": "Backend Java Developer (Internship)",
 	"exp2_meta": "Medcol FZCO — \"Medical Atlas\" project · Oct 9 – Dec 18, 2023",
-	"exp2_body": "Sole backend developer on the project, from first line of code to the internal MVP. Java/Spring, JWT auth, Swagger, NHibernate. Recommended by the CTO for communication skills and eagerness to learn.",
+	"exp2_bullet1": "Sole backend developer on the project, from first line of code to the internal MVP.",
+	"exp2_bullet2": "Built the Java/Spring backend with JWT auth, Swagger docs and NHibernate.",
+	"exp2_bullet3": "Recommended by the CTO for communication skills and eagerness to learn.",
 
 	"exp3_role": "Back End Java Engineer (Trainee)",
 	"exp3_meta": "Tel-Ran.de · 07/2022 – 05/2023",
-	"exp3_body": "Built a banking web application (back-end) in Spring with a MySQL connection, including tests.",
+	"exp3_bullet1": "Built a banking web application backend in Spring with a MySQL connection, including tests.",
 
 	"exp4_role": "Managing Director",
 	"exp4_meta": "Polysan Ukraine PE, Kharkiv · 06/2014 – 02/2022",
-	"exp4_body": "Led business teams in e-commerce and public tendering.",
+	"exp4_bullet1": "Led business teams in e-commerce and public tendering.",
 
 	"projects_title": "Projects",
 
@@ -77,7 +78,7 @@
 	"lang_uk": "Ukrainian — native",
 	"lang_ru": "Russian — native",
 
-	"contact_title": "Contact",
-	"contact_open": "Open to Junior+/Middle Backend/Fullstack roles in Düsseldorf, Köln and NRW.",
+	"open_to_title": "Open to",
+	"contact_open": "Junior+/Middle Backend/Fullstack roles in Düsseldorf, Köln and NRW.",
 	"footer_consent": "I consent to the processing of my personal data for the purpose of recruitment for the position to which I am applying."
 }

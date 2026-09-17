@@ -18,7 +18,7 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="mx-auto flex min-h-screen max-w-3xl flex-col px-4">
+<div class="mx-auto flex min-h-screen max-w-6xl flex-col px-4">
 	<header
 		class="no-print border-border sticky top-0 z-10 flex items-center justify-between gap-3 border-b bg-[var(--color-bg)]/90 py-3 backdrop-blur"
 	>

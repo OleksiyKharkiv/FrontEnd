@@ -90,6 +90,88 @@ code,
 	color: var(--color-code);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+/* Anchor-jump targets: leaves room for the sticky header + mobile pill
+   nav so a jumped-to heading isn't hidden underneath either. */
+.scroll-target {
+	scroll-margin-top: 6rem;
+}
+
+/* A real link, as opposed to decorative accent-colored text (job dates,
+   etc.) — underlined at rest, not only on hover, so it's obviously
+   clickable without having to find it first. */
+.link {
+	color: var(--color-accent);
+	text-decoration: underline;
+	text-decoration-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+	text-underline-offset: 2px;
+}
+.link:hover {
+	color: var(--color-accent-deep);
+	text-decoration-color: currentColor;
+}
+
+/*
+  Structural layout for the CV page: mobile-first single column, with a
+  sticky two-column rail+main split from 1024px up. Written as plain CSS
+  (not stacked Tailwind variants) on purpose — this is exactly the class
+  of layout bug the Lebens Rhythmus RESPONSIVE_SCALING_PLAYBOOK.md warns
+  about, so the breakpoint switch lives in one hand-written place instead
+  of being spread across many utility classes.
+*/
+.cv-layout {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.cv-nav-pills {
+	position: sticky;
+	top: 3.25rem;
+	z-index: 5;
+	background: var(--color-bg);
+	padding-block: 0.5rem;
+	margin-inline: -1rem;
+	padding-inline: 1rem;
+}
+
+.cv-rail {
+	display: none;
+}
+
+@media (min-width: 1024px) {
+	.cv-layout {
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 3.5rem;
+	}
+
+	.cv-nav-pills {
+		display: none;
+	}
+
+	.cv-rail {
+		display: block;
+		position: sticky;
+		top: 5.5rem;
+		flex: 0 0 240px;
+		max-height: calc(100vh - 6.5rem);
+		overflow-y: auto;
+	}
+
+	.cv-main {
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+
+	.cv-facts-mobile {
+		display: none;
+	}
+}
+
 @media print {
 	body {
 		background: #fff;
