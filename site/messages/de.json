@@ -25,6 +25,10 @@
 	"summary_p2": "Neben der Erfahrung bei Light Digital Solutions GmbH und Medcol.io betreibe ich zwei eigene Production-Projekte auf meiner privaten Infrastruktur (Proxmox, Debian 12, GitLab CI/CD): Numi und Lebens Rhythmus / tlab29.com. Beide Systeme betreue ich eigenständig, inklusive Wiederherstellung nach einem realen Infrastrukturausfall.",
 	"summary_quip": "// alte Angewohnheit: denke immer noch in Java-artigem Pseudocode, wenn niemand zusieht.",
 
+	"links_title": "Links",
+	"link_numi": "Rechnungs-App Numi",
+	"link_lr": "Kreativ-Plattform tlab29",
+
 	"skills_title": "Skills",
 	"skills_items": "Java, Spring Boot · Go · PostgreSQL, MySQL, SQLite, MongoDB · REST API · Spring Security, JWT · Docker, Kubernetes (k3s) · GitLab CI/CD · Maven, Gradle · JUnit, Testcontainers · Swagger, Postman · Microsoft Azure, Power BI · Jira, Asana · Kotlin (Grundkenntnisse, KI-unterstützt)",
 

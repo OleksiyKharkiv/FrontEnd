@@ -6,6 +6,7 @@
 	import FactsPanel from '$lib/components/FactsPanel.svelte';
 	import { contact } from '$lib/contact';
 	import { navState, sections } from '$lib/navState.svelte';
+	import photo from '$lib/assets/photo.jpg';
 
 	const experience = $derived([
 		{
@@ -55,15 +56,24 @@
 	</aside>
 
 	<div class="cv-main">
-		<section class="mb-14">
-			<h1 class="font-display text-text text-3xl font-700 sm:text-4xl">Oleksiy Khudoshyn</h1>
-			<p class="text-accent font-display mt-1 text-lg font-600">{m.hero_role()}</p>
-			<p class="text-text-dim mt-1 text-sm">{m.hero_tagline()} · {m.hero_location()}</p>
-			<div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
-				<a class="link" href="mailto:{contact.email}">{contact.email}</a>
-				<a class="link" href="tel:{contact.phone.replace(/\s/g, '')}">{contact.phone}</a>
-				<a class="link" href={contact.github} target="_blank" rel="noreferrer">{contact.githubLabel}</a>
-				<a class="link" href={contact.linkedin} target="_blank" rel="noreferrer">{contact.linkedinLabel}</a>
+		<section class="mb-14 flex flex-wrap items-center gap-5">
+			<img
+				src={photo}
+				alt="Oleksiy Khudoshyn"
+				width="88"
+				height="88"
+				class="border-border h-[88px] w-[88px] shrink-0 rounded-full border object-cover"
+			/>
+			<div>
+				<h1 class="font-display text-text text-3xl font-700 sm:text-4xl">Oleksiy Khudoshyn</h1>
+				<p class="text-accent font-display mt-1 text-lg font-600">{m.hero_role()}</p>
+				<p class="text-text-dim mt-1 text-sm">{m.hero_tagline()} · {m.hero_location()}</p>
+				<div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+					<a class="link" href="mailto:{contact.email}">{contact.email}</a>
+					<a class="link" href="tel:{contact.phone.replace(/\s/g, '')}">{contact.phone}</a>
+					<a class="link" href={contact.github} target="_blank" rel="noreferrer">{contact.githubLabel}</a>
+					<a class="link" href={contact.linkedin} target="_blank" rel="noreferrer">{contact.linkedinLabel}</a>
+				</div>
 			</div>
 		</section>
 

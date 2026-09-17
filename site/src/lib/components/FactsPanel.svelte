@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as m from '$lib/paraglide/messages';
+	import { contact } from '$lib/contact';
 
 	const skills = $derived(m.skills_items().split(' · '));
 	const languages = $derived([m.lang_de(), m.lang_en(), m.lang_uk(), m.lang_ru()]);
@@ -13,6 +14,16 @@
 				<span class="border-border text-text-dim rounded-full border px-2 py-0.5 text-xs">{skill}</span>
 			{/each}
 		</div>
+	</div>
+
+	<div>
+		<h2 class="font-display text-text mb-2 text-sm font-600">{m.links_title()}</h2>
+		<ul class="space-y-1 text-sm">
+			<li><a class="link" href={contact.github} target="_blank" rel="noreferrer">GitHub</a></li>
+			<li><a class="link" href={contact.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></li>
+			<li><a class="link" href="https://numi.report/" target="_blank" rel="noreferrer">{m.link_numi()}</a></li>
+			<li><a class="link" href="https://tlab29.com/" target="_blank" rel="noreferrer">{m.link_lr()}</a></li>
+		</ul>
 	</div>
 
 	<div>
