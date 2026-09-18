@@ -10,30 +10,53 @@
 @import '@fontsource/ibm-plex-sans/600.css';
 
 /*
-  Personal-site design tokens.
+  Personal-site design tokens — revised 2026-09-18 after beta feedback.
+
+  v1's dark theme (near-black + amber/orange accent, #f2994a) was called
+  out as reading like Pornhub's brand colors — black+orange is that
+  site's literal identity, not a coincidence once pointed out. v1's light
+  theme used a PURE #ffffff surface on an off-white page, which read as
+  glare/"burning white" rather than a calm light theme. Both fixed by
+  moving the whole palette to a teal/cyan family (distinct from numi's
+  indigo and Lebens Rhythmus's gold+teal-on-warm-ink — different hue
+  role and different base color, not a reuse) and, for light mode,
+  lowering surface luminance instead of maxing it out.
+
+  Ergonomics basis for the light-mode fix (not just taste): a pure-white
+  large surface next to dark text is the classic "glare" complaint in
+  screen-ergonomics guidance (e.g. ISO 9241-303, and the same reasoning
+  Material Design and Apple HIG use for never shipping #ffffff as a full
+  page background) — very high luminance under normal-to-dim ambient
+  light forces the eye's pupil to contract hard, which reads as
+  "burning"/fatiguing well before you hit a WCAG contrast problem. Target
+  here: page bg ~84% relative luminance, card surface ~92% — both far
+  below 100%, both still comfortably light-mode.
+
   Dark is the default (developer-portfolio convention); a light override
   lives under [data-theme="light"] with the same variable names, so every
   component keeps using the same bg/text/accent classes unchanged.
 
   Contrast checked against the real WCAG relative-luminance formula (not
   eyeballed) — same discipline as numi's NUMI-142 token fix:
-    dark  text/bg        15.36:1   dark  text-dim/bg   7.16:1
-    dark  accent/bg       8.22:1   dark  code/bg       10.42:1
-    light text/bg        15.89:1   light text-dim/bg    6.43:1
-    light accent/bg       5.05:1   light code/bg         5.98:1
-  All comfortably clear WCAG 2.2 AA's 4.5:1 for normal text.
+    dark  text/bg        15.26:1   dark  text-dim/bg    7.99:1
+    dark  accent/bg       9.70:1   dark  code/bg       10.01:1
+    light text/bg        14.04:1   light text-dim/bg    6.99:1
+    light accent/bg       6.08:1   light code/bg         6.21:1
+  All comfortably clear WCAG 2.2 AA's 4.5:1 for normal text — most clear
+  it by 1.5x+, since very-tight-to-4.5 was part of what made v1 feel
+  harsh rather than just "technically passing".
 */
 @theme {
-	--color-bg: #15141a;
-	--color-bg-2: #1c1b22;
-	--color-surface: #1f1e26;
-	--color-border: #2c2b35;
-	--color-text: #eceaf2;
-	--color-text-dim: #a3a0b0;
-	--color-accent: #f2994a;
-	--color-accent-deep: #c9762e;
-	--color-code: #7dd3c0;
-	--color-error: #e2574c;
+	--color-bg: #12171a;
+	--color-bg-2: #182024;
+	--color-surface: #1b2428;
+	--color-border: #2a3438;
+	--color-text: #e8edec;
+	--color-text-dim: #9fb0ae;
+	--color-accent: #2dd4bf;
+	--color-accent-deep: #14b8a6;
+	--color-code: #93c5fd;
+	--color-error: #f87171;
 
 	--font-display: 'Space Grotesk', sans-serif;
 	--font-body: 'IBM Plex Sans', sans-serif;
@@ -50,16 +73,16 @@
 }
 
 :root[data-theme='light'] {
-	--color-bg: #f7f5f2;
-	--color-bg-2: #eeebe6;
-	--color-surface: #ffffff;
-	--color-border: #ddd8d0;
-	--color-text: #1b1a1f;
-	--color-text-dim: #5b5766;
-	--color-accent: #9c5818;
-	--color-accent-deep: #7a4512;
-	--color-code: #0e6a5a;
-	--color-error: #b23b32;
+	--color-bg: #dff0ee;
+	--color-bg-2: #cfe6e2;
+	--color-surface: #eef8f6;
+	--color-border: #b9d6d1;
+	--color-text: #10221f;
+	--color-text-dim: #3d5350;
+	--color-accent: #086358;
+	--color-accent-deep: #064a42;
+	--color-code: #1a5a8a;
+	--color-error: #a8342a;
 }
 
 html {
