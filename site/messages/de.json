@@ -18,7 +18,7 @@
 
 	"hero_role": "Software- & Backend-Entwickler · Java/Spring Boot · Go",
 	"hero_tagline": "Ausfallsichere B2B-Systeme · Bare-Metal k3s & Cloud · GoBD-Compliance",
-	"hero_location": "Bergheim, Deutschland",
+	"hero_location": "Bergheim, NRW, Deutschland",
 
 	"summary_title": "Über mich",
 	"summary_p1": "Software- und Backend-Entwickler (Java, Spring Boot, Go) mit fundiertem mathematisch-technischem Hintergrund (Nationale Luft- und Raumfahrtuniversität Charkiw, Diplom-Ingenieur) und langjähriger Erfahrung in der Leitung kommerzieller Projekte. Ich starte die Softwareentwicklung stets mit der Domänen- und ERM-Strukturierung: Ich verbinde reale Geschäftsanforderungen mit einer robusten, wartbaren Architektur, die sich flexibel an veränderte Markt- und Kundenanforderungen anpassen lässt — ohne Drama und ohne Umbau des Systemkerns.",
@@ -34,25 +34,30 @@
 
 	"experience_title": "Erfahrung",
 
-	"exp1_role": "Trainee DevOps Engineer",
-	"exp1_meta": "Light Digital Solutions GmbH, Hürth · 03/2024 – 02/2025",
-	"exp1_bullet1": "Mitverantwortlich für die Betreuung einer Web-Applikation eines Telekommunikationskunden im agilen Scrum-Team (Jira).",
-	"exp1_bullet2": "Go-Mikrodienste entwickelt und eine Kotlin-App gewartet; MongoDB-Daten nach MS SQL Server migriert und Power-BI-Reports auf Microsoft Azure erstellt.",
-	"exp1_bullet3": "Einen Schülerpraktikanten zu APIs und Backend-Frontend-Datenaustausch betreut.",
+	"exp1_role": "Java Backend Developer",
+	"exp1_meta": "Alpha Loop GmbH, Lindlar (Praxisphase IHK) · 03/2026 – 10/2026",
+	"exp1_bullet1": "Entwicklung und Wartung eines produktiven Java-basierten ERP-Systems im Team über Jira (Service Desk & Kunden-Tickets, Entwicklungs-Backlog).",
+	"exp1_bullet2": "Migration des Persistenz-Layers von Hibernate 5 auf Hibernate 6 (Jakarta Persistence, Anpassung von Typ-Mappings und HQL-Abfragen).",
+	"exp1_bullet3": "Implementierung von Fehlerbehebungen und neuen Modulfunktionen unter Einhaltung von Unternehmens-Code-Standards.",
 
-	"exp2_role": "Backend Java Developer (Praktikum)",
-	"exp2_meta": "Medcol FZCO — Projekt „Medical Atlas“ · 09.10. – 18.12.2023",
-	"exp2_bullet1": "Alleiniger Backend-Entwickler des Projekts, von der ersten Zeile Code bis zum internen MVP.",
-	"exp2_bullet2": "Java/Spring-Backend mit JWT-Auth, Swagger-Dokumentation und NHibernate aufgebaut.",
-	"exp2_bullet3": "Vom CTO für Kommunikationsstärke und Lernbereitschaft empfohlen.",
+	"exp2_role": "Software- & DevOps-Engineer",
+	"exp2_meta": "Light Digital Solutions GmbH, Hürth · 03/2024 – 02/2025",
+	"exp2_bullet1": "Entwicklung von Go-Mikrodiensten und Backend-Modulen für eine cross-platform Sport-Webanwendung (Marathon, Triathlon, Radsport) im agilen Scrum-Team.",
+	"exp2_bullet2": "Wartung und Weiterentwicklung einer mobilen Kotlin-Anwendung zur synchronen Anbindung an die Backend-APIs.",
+	"exp2_bullet3": "Migration großer Datenmengen von MongoDB nach MS SQL Server, Wiederherstellung von BSON-Dumps und Erstellung automatisierter Power-BI-Dashboards auf Microsoft Azure.",
+	"exp2_bullet4": "Fachliches Mentoring eines studentischen Praktikanten bezüglich REST-APIs und Datenaustausch-Standards.",
 
-	"exp3_role": "Back End Java Engineer (Trainee)",
-	"exp3_meta": "Tel-Ran.de · 07/2022 – 05/2023",
-	"exp3_bullet1": "Backend einer Banking-Webanwendung in Spring mit MySQL-Anbindung aufgebaut, inklusive Tests.",
+	"exp3_role": "Backend Java Developer",
+	"exp3_meta": "Medcol FZCO — Projekt „Medical Atlas“ · 10/2023 – 12/2023",
+	"exp3_bullet1": "Alleiniger Backend-Entwickler des Projekts im Team: Eigenständige Umsetzung der Backend-Architektur von der ersten Zeile Code bis zum internen MVP.",
+	"exp3_bullet2": "Aufbau des Java/Spring Boot Backends mit PostgreSQL, Hibernate ORM, stateless JWT-Authentifizierung und OpenAPI/Swagger-Dokumentation.",
+	"exp3_bullet3": "Vom CTO für Kommunikationsstärke, saubere Code-Struktur und schnelle Einarbeitung empfohlen.",
 
-	"exp4_role": "Geschäftsführer",
-	"exp4_meta": "Polysan Ukraine PE, Kharkiv · 06/2014 – 02/2022",
-	"exp4_bullet1": "Geschäftsteams im Bereich E-Commerce und öffentliche Vergabeverfahren geleitet.",
+	"exp4_role": "Operations & Project Manager",
+	"exp4_meta": "Polysan Ukraine PE, Charkiw · 06/2014 – 02/2022",
+	"exp4_bullet1": "Steuerung von B2B-Handelsprojekten und öffentlichen Vergabeverfahren (1.043 staatliche Ausschreibungen, 521 gewonnene Verträge).",
+	"exp4_bullet2": "Aufbau strukturierter Prozessabläufe, Budgetkontrolle und strikte Einhaltung vertraglicher und rechtlicher Vorgaben.",
+	"exp4_bullet3": "Koordination von Teams in Vertrieb, Beschaffung und Logistik zur termingerechten Vertragserfüllung.",
 
 	"projects_title": "Projekte",
 

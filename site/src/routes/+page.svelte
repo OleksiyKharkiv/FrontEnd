@@ -17,10 +17,18 @@
 		{
 			role: m.exp2_role(),
 			meta: m.exp2_meta(),
-			bullets: [m.exp2_bullet1(), m.exp2_bullet2(), m.exp2_bullet3()]
+			bullets: [m.exp2_bullet1(), m.exp2_bullet2(), m.exp2_bullet3(), m.exp2_bullet4()]
 		},
-		{ role: m.exp3_role(), meta: m.exp3_meta(), bullets: [m.exp3_bullet1()] },
-		{ role: m.exp4_role(), meta: m.exp4_meta(), bullets: [m.exp4_bullet1()] }
+		{
+			role: m.exp3_role(),
+			meta: m.exp3_meta(),
+			bullets: [m.exp3_bullet1(), m.exp3_bullet2(), m.exp3_bullet3()]
+		},
+		{
+			role: m.exp4_role(),
+			meta: m.exp4_meta(),
+			bullets: [m.exp4_bullet1(), m.exp4_bullet2(), m.exp4_bullet3()]
+		}
 	]);
 
 	// Scrollspy: whichever tracked section's midline crosses the middle

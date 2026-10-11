@@ -18,7 +18,7 @@
 
 	"hero_role": "Software & Backend Engineer · Java/Spring Boot · Go",
 	"hero_tagline": "Resilient B2B Systems · Bare-Metal k3s & Cloud · GoBD Compliance",
-	"hero_location": "Bergheim, Germany",
+	"hero_location": "Bergheim, NRW, Germany",
 
 	"summary_title": "About",
 	"summary_p1": "Software and Backend Engineer (Java, Spring Boot, Go) with a rigorous engineering foundation (Kharkiv Aerospace University, Dipl.-Ing.) and extensive experience leading commercial projects. I approach development through structural domain modeling and ERM design: aligning business requirements with a resilient, maintainable architecture that adapts swiftly to changing market needs — without drama and without rebuilding the system core.",
@@ -34,25 +34,30 @@
 
 	"experience_title": "Experience",
 
-	"exp1_role": "Trainee DevOps Engineer",
-	"exp1_meta": "Light Digital Solutions GmbH, Hürth · 03/2024 – 02/2025",
-	"exp1_bullet1": "Co-supported a telecom client's web application in an agile Scrum team (Jira).",
-	"exp1_bullet2": "Built Go microservices and maintained a Kotlin mobile app; migrated MongoDB data to MS SQL Server and built Power BI reports on Microsoft Azure.",
-	"exp1_bullet3": "Mentored a student intern on APIs and backend-frontend data exchange.",
+	"exp1_role": "Java Backend Developer",
+	"exp1_meta": "Alpha Loop GmbH, Lindlar (IHK Professional Placement) · 03/2026 – 10/2026",
+	"exp1_bullet1": "Maintained and enhanced a production Java enterprise ERP platform within a team via Jira (Service Desk client tickets and development backlog).",
+	"exp1_bullet2": "Executed persistence-layer migration from Hibernate 5 to Hibernate 6 (Jakarta Persistence transition, entity type mappings, and HQL query refinement).",
+	"exp1_bullet3": "Resolved high-priority production bugs and delivered functional module features adhering to enterprise clean-code standards.",
 
-	"exp2_role": "Backend Java Developer (Internship)",
-	"exp2_meta": "Medcol FZCO — \"Medical Atlas\" project · Oct 9 – Dec 18, 2023",
-	"exp2_bullet1": "Sole backend developer on the project, from first line of code to the internal MVP.",
-	"exp2_bullet2": "Built the Java/Spring backend with JWT auth, Swagger docs and NHibernate.",
-	"exp2_bullet3": "Recommended by the CTO for communication skills and eagerness to learn.",
+	"exp2_role": "Software & DevOps Engineer",
+	"exp2_meta": "Light Digital Solutions GmbH, Hürth · 03/2024 – 02/2025",
+	"exp2_bullet1": "Engineered Go microservices and backend services for a cross-platform sports application (marathon, triathlon, cycling) in an agile Scrum setup.",
+	"exp2_bullet2": "Maintained and enhanced a Kotlin mobile application ensuring continuous synchronization with backend APIs.",
+	"exp2_bullet3": "Executed end-to-end data migration from MongoDB to MS SQL Server, restored BSON dumps, and built automated Power BI reports on Microsoft Azure.",
+	"exp2_bullet4": "Mentored an engineering intern in REST API protocols and frontend-backend data exchange standards.",
 
-	"exp3_role": "Back End Java Engineer (Trainee)",
-	"exp3_meta": "Tel-Ran.de · 07/2022 – 05/2023",
-	"exp3_bullet1": "Built a banking web application backend in Spring with a MySQL connection, including tests.",
+	"exp3_role": "Backend Java Developer",
+	"exp3_meta": "Medcol FZCO — \"Medical Atlas\" Project · 10/2023 – 12/2023",
+	"exp3_bullet1": "Sole backend developer on the project within the team: engineered backend architecture from first line of code to the internal MVP.",
+	"exp3_bullet2": "Built the Java/Spring Boot backend with PostgreSQL, Hibernate ORM, stateless JWT authentication, and OpenAPI/Swagger documentation.",
+	"exp3_bullet3": "Commended by the CTO for clear communication, clean code structure, and rapid onboarding.",
 
-	"exp4_role": "Managing Director",
+	"exp4_role": "Operations & Project Manager",
 	"exp4_meta": "Polysan Ukraine PE, Kharkiv · 06/2014 – 02/2022",
-	"exp4_bullet1": "Led business teams in e-commerce and public tendering.",
+	"exp4_bullet1": "Managed B2B commercial operations and public procurement tenders (1,043 state tenders, 521 contract awards).",
+	"exp4_bullet2": "Established structured operational workflows, budget tracking, and strict adherence to contractual and regulatory compliance.",
+	"exp4_bullet3": "Coordinated cross-functional teams across procurement, logistics, and sales to ensure deterministic contract fulfillment.",
 
 	"projects_title": "Projects",
 
