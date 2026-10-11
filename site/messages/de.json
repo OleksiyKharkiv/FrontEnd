@@ -16,14 +16,14 @@
 	"status_unreachable": "nicht erreichbar",
 	"status_check_note": "Live-Check aus deinem Browser, kein Screenshot.",
 
-	"hero_role": "Backend-Entwickler · Java/Spring Boot · Go",
-	"hero_tagline": "Kubernetes & CI/CD auf eigener Infrastruktur",
+	"hero_role": "Software- & Backend-Entwickler · Java/Spring Boot · Go",
+	"hero_tagline": "Ausfallsichere B2B-Systeme · Bare-Metal k3s & Cloud · GoBD-Compliance",
 	"hero_location": "Bergheim, Deutschland",
 
 	"summary_title": "Über mich",
-	"summary_p1": "Backend-Entwickler mit Wiedereinstieg in die IT, mit technischem Fundament (Nationale Luft- und Raumfahrtuniversität Charkiw, Diplom-Ingenieur) und AFP Akademie Köln (IHK-zertifizierte Weiterbildung).",
-	"summary_p2": "Neben der Erfahrung bei Light Digital Solutions GmbH und Medcol.io betreibe ich zwei eigene Production-Projekte auf meiner privaten Infrastruktur (Proxmox, Debian 12, GitLab CI/CD): Numi und Lebens Rhythmus / tlab29.com. Beide Systeme betreue ich eigenständig, inklusive Wiederherstellung nach einem realen Infrastrukturausfall.",
-	"summary_quip": "// alte Angewohnheit: denke immer noch in Java-artigem Pseudocode, wenn niemand zusieht.",
+	"summary_p1": "Software- und Backend-Entwickler (Java, Spring Boot, Go) mit fundiertem mathematisch-technischem Hintergrund (Nationale Luft- und Raumfahrtuniversität Charkiw, Diplom-Ingenieur) und langjähriger Erfahrung in der Leitung kommerzieller Projekte. Ich starte die Softwareentwicklung stets mit der Domänen- und ERM-Strukturierung: Ich verbinde reale Geschäftsanforderungen mit einer robusten, wartbaren Architektur, die sich flexibel an veränderte Markt- und Kundenanforderungen anpassen lässt — ohne Drama und ohne Umbau des Systemkerns.",
+	"summary_p2": "Ich entwerfe, baue und betreibe produktive Systeme eigenverantwortlich auf meiner privaten Bare-Metal-Infrastruktur (Proxmox, Debian 12, k3s, GitLab CI/CD). Dazu gehören die GoBD-konforme Rechnungs-PWA Numi (numi.report) auf Basis von Go, SQLite WAL und Litestream sowie die Plattform tlab29.com (Java 21, Spring Boot 3.5, PostgreSQL, Kubernetes) mit automatisierten Cron-Wiederherstellungstests und Offsite-Cloud-Backups für maximale Ausfallsicherheit.",
+	"summary_quip": "// Leitprinzipien: Erst die Architektur, dann der Code; erst die Datensicherheit, dann das Deployment; erst der Kundennutzen, dann der Entwicklerkomfort.",
 
 	"links_title": "Links",
 	"link_numi": "Rechnungs-App Numi",

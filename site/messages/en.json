@@ -16,14 +16,14 @@
 	"status_unreachable": "unreachable",
 	"status_check_note": "Live check from your browser, not a screenshot.",
 
-	"hero_role": "Backend Developer · Java/Spring Boot · Go",
-	"hero_tagline": "Kubernetes & CI/CD on my own infrastructure",
+	"hero_role": "Software & Backend Engineer · Java/Spring Boot · Go",
+	"hero_tagline": "Resilient B2B Systems · Bare-Metal k3s & Cloud · GoBD Compliance",
 	"hero_location": "Bergheim, Germany",
 
 	"summary_title": "About",
-	"summary_p1": "Backend developer re-entering IT, with a technical foundation (Kharkiv Aviation University, Dipl.-Ing.) and AFP Akademie Köln (IHK-certified further-education program).",
-	"summary_p2": "Alongside my experience at Light Digital Solutions GmbH and Medcol.io, I run two production projects on my own home infrastructure (Proxmox, Debian 12, GitLab CI/CD): Numi and Lebens Rhythmus / tlab29.com. I maintain both myself, including recovering from a real infrastructure outage.",
-	"summary_quip": "// old habit: still think in Java-flavoured pseudocode when nobody's looking.",
+	"summary_p1": "Software and Backend Engineer (Java, Spring Boot, Go) with a rigorous engineering foundation (Kharkiv Aerospace University, Dipl.-Ing.) and extensive experience leading commercial projects. I approach development through structural domain modeling and ERM design: aligning business requirements with a resilient, maintainable architecture that adapts swiftly to changing market needs — without drama and without rebuilding the system core.",
+	"summary_p2": "I architect, build, and operate production systems end-to-end on my own bare-metal infrastructure (Proxmox, Debian 12, k3s, GitLab CI/CD). These include Numi (numi.report) — a GoBD-compliant invoicing PWA engineered with Go, SQLite WAL, and Litestream replication — and the tlab29.com platform (Java 21, Spring Boot 3.5, PostgreSQL, Kubernetes), featuring automated disaster recovery restoration drills and offsite cloud backup replication.",
+	"summary_quip": "// Guiding principles: Architecture before code; data security before deployment; client value before developer convenience.",
 
 	"links_title": "Links",
 	"link_numi": "Invoicing app Numi",
