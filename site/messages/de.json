@@ -30,7 +30,7 @@
 	"link_lr": "Kreativ-Plattform tlab29",
 
 	"skills_title": "Skills",
-	"skills_items": "Java, Spring Boot · Go · PostgreSQL, MySQL, SQLite, MongoDB · REST API · Spring Security, JWT · Docker, Kubernetes (k3s) · GitLab CI/CD · Maven, Gradle · JUnit, Testcontainers · Swagger, Postman · Microsoft Azure, Power BI · Jira, Asana · Kotlin (Grundkenntnisse, KI-unterstützt)",
+	"skills_items": "Java 21, Spring Boot 3 · Go (Golang) · Hibernate 6, Spring Data JPA · PostgreSQL, SQLite (Litestream), MongoDB, MS SQL · Docker, Kubernetes (k3s) · Linux (Debian), Proxmox · GitLab CI/CD · Spring Security, JWT · REST API, OpenAPI/Swagger · JUnit 5, Testcontainers · GoBD, DSGVO-Compliance · Maven, Gradle · Microsoft Azure, Power BI · Kotlin · Jira, Scrum",
 
 	"experience_title": "Erfahrung",
 
@@ -62,13 +62,13 @@
 	"projects_title": "Projekte",
 
 	"proj_numi_title": "Numi",
-	"proj_numi_meta": "GoBD-konforme Rechnungs-PWA · seit 2025",
-	"proj_numi_body": "Vollständig selbst entworfen und entwickelt: Go-Backend, SvelteKit-Frontend, SQLite (WAL) mit Litestream-Replikation, JWT-Auth, PDF-Generierung. Deployment auf eigener Infrastruktur — Proxmox/Debian 12, Docker, GitLab CI/CD, Cloudflare Tunnel. Aktiver Beta-Kunde.",
+	"proj_numi_meta": "GoBD-konforme Rechnungs-PWA · Go & SvelteKit",
+	"proj_numi_body": "Vollständig eigenständig entworfen und entwickelt: Go-Backend (Clean Architecture), SvelteKit-PWA, SQLite (WAL) mit kontinuierlicher Litestream-Replikation und GoBD-konformer Unveränderbarkeit (§14/§19 UStG, DATEV-Vorbereitung). Deployment auf privater Proxmox/Debian-12-Infrastruktur via Docker, GitLab CI/CD und Cloudflare Tunnel. Im produktiven Einsatz bei einem aktiven Beta-Kunden.",
 	"proj_numi_link": "numi.report",
 
-	"proj_lr_title": "Lebens Rhythmus / tlab29.com",
-	"proj_lr_meta": "Plattform für ein Kreativstudio · seit 2023",
-	"proj_lr_body": "Selbst entworfen und betrieben: Java/Spring Boot, PostgreSQL, SvelteKit-Frontend, Kubernetes (k3s) mit Traefik, GitLab CI/CD, Cloudflare Tunnel — auf eigener Proxmox/Debian-12-Infrastruktur. Wiederherstellung nach einem realen Infrastrukturausfall (Stromausfall mit Kaskadenfolgen) selbst durchgeführt.",
+	"proj_lr_title": "tlab29.com",
+	"proj_lr_meta": "Kreativstudio-Plattform · Java 21 & Kubernetes",
+	"proj_lr_body": "Eigenständig entworfen und im Live-Betrieb: Java 21, Spring Boot 3.5, PostgreSQL, Kubernetes (k3s) mit Traefik und GitLab CI/CD auf privater Proxmox/Debian-12-Infrastruktur. Etablierte Disaster-Recovery-Strategie: automatisierte Cron-Wiederherstellungstests, Offsite-Cloud-Backups und erfolgreich durchgeführte Systemrettung nach realem Hardware-/Stromausfall.",
 	"proj_lr_link": "tlab29.com",
 
 	"education_title": "Ausbildung",
@@ -88,6 +88,6 @@
 	"lang_ru": "Russisch — Muttersprache",
 
 	"open_to_title": "Offen für",
-	"contact_open": "Junior+/Middle-Positionen im Backend/Fullstack-Bereich in Düsseldorf, Köln und NRW.",
+	"contact_open": "Positionen als Backend Engineer, Full-Stack Engineer, Distributed Systems & B2B Solutions Engineer im Raum Köln, Düsseldorf, NRW oder remote.",
 	"footer_consent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten für die Zwecke der Bewerbung auf die Position zu, für die ich mich bewerbe."
 }

@@ -30,7 +30,7 @@
 	"link_lr": "Creative-arts platform tlab29",
 
 	"skills_title": "Skills",
-	"skills_items": "Java, Spring Boot · Go · PostgreSQL, MySQL, SQLite, MongoDB · REST API · Spring Security, JWT · Docker, Kubernetes (k3s) · GitLab CI/CD · Maven, Gradle · JUnit, Testcontainers · Swagger, Postman · Microsoft Azure, Power BI · Jira, Asana · Kotlin (basic, AI-assisted)",
+	"skills_items": "Java 21, Spring Boot 3 · Go (Golang) · Hibernate 6, Spring Data JPA · PostgreSQL, SQLite (Litestream), MongoDB, MS SQL · Docker, Kubernetes (k3s) · Linux (Debian), Proxmox · GitLab CI/CD · Spring Security, JWT · REST API, OpenAPI/Swagger · JUnit 5, Testcontainers · GoBD, DSGVO/GDPR Compliance · Maven, Gradle · Microsoft Azure, Power BI · Kotlin · Jira, Scrum",
 
 	"experience_title": "Experience",
 
@@ -62,13 +62,13 @@
 	"projects_title": "Projects",
 
 	"proj_numi_title": "Numi",
-	"proj_numi_meta": "GoBD-compliant invoicing PWA · since 2025",
-	"proj_numi_body": "Designed and built end-to-end, solo: Go backend, SvelteKit frontend, SQLite (WAL) with Litestream replication, JWT auth, PDF generation. Deployed on my own infrastructure — Proxmox/Debian 12, Docker, GitLab CI/CD, Cloudflare Tunnel. Active beta client.",
+	"proj_numi_meta": "GoBD-Compliant Invoicing PWA · Go & SvelteKit",
+	"proj_numi_body": "Designed and built end-to-end, solo: Go backend (Clean Architecture), SvelteKit PWA, SQLite (WAL) with continuous Litestream replication, and GoBD-compliant immutability (§14/§19 UStG, DATEV export readiness). Deployed on my own Proxmox/Debian 12 infrastructure via Docker, GitLab CI/CD, and Cloudflare Tunnel. In live production with an active beta client.",
 	"proj_numi_link": "numi.report",
 
-	"proj_lr_title": "Lebens Rhythmus / tlab29.com",
-	"proj_lr_meta": "Creative-arts studio platform · since 2023",
-	"proj_lr_body": "Designed and operated end-to-end: Java/Spring Boot, PostgreSQL, SvelteKit frontend, Kubernetes (k3s) with Traefik, GitLab CI/CD, Cloudflare Tunnel — on my own Proxmox/Debian 12 infrastructure. Recovered it myself after a real infrastructure outage (cascading failures).",
+	"proj_lr_title": "tlab29.com",
+	"proj_lr_meta": "Creative Studio Platform · Java 21 & Kubernetes",
+	"proj_lr_body": "Designed and operated in live production: Java 21, Spring Boot 3.5, PostgreSQL, Kubernetes (k3s) with Traefik, and GitLab CI/CD on bare-metal Proxmox/Debian 12. Implemented a zero-data-loss disaster recovery strategy: automated cron restoration drills, offsite cloud replication, and verified recovery following a real-world hardware power outage.",
 	"proj_lr_link": "tlab29.com",
 
 	"education_title": "Education",
@@ -88,6 +88,6 @@
 	"lang_ru": "Russian — native",
 
 	"open_to_title": "Open to",
-	"contact_open": "Junior+/Middle Backend/Fullstack roles in Düsseldorf, Köln and NRW.",
+	"contact_open": "Backend Engineer, Full-Stack Engineer, Distributed Systems & B2B Solutions Engineer roles in Cologne, Düsseldorf, NRW, or remote.",
 	"footer_consent": "I consent to the processing of my personal data for the purpose of recruitment for the position to which I am applying."
 }
