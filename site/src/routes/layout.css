@@ -195,15 +195,207 @@ html {
 	}
 }
 
+.print-url {
+	display: none;
+}
+
 @media print {
-	body {
-		background: #fff;
-		color: #000;
+	@page {
+		size: A4;
+		margin: 10mm 14mm 10mm 14mm;
 	}
+
+	:root,
+	:root[data-theme='light'],
+	html,
+	body {
+		--color-bg: #ffffff !important;
+		--color-bg-2: #f8fafc !important;
+		--color-surface: #ffffff !important;
+		--color-border: #cbd5e1 !important;
+		--color-text: #0f172a !important;
+		--color-text-dim: #475569 !important;
+		--color-accent: #0f766e !important;
+		--color-accent-deep: #115e59 !important;
+		--color-code: #0369a1 !important;
+		background: #ffffff !important;
+		color: #0f172a !important;
+		color-scheme: light !important;
+		-webkit-print-color-adjust: exact !important;
+		print-color-adjust: exact !important;
+		font-size: 9.5pt !important;
+		line-height: 1.35 !important;
+	}
+
 	.no-print {
 		display: none !important;
 	}
+
 	.cv-facts-mobile {
 		display: block !important;
+	}
+
+	.print-url {
+		display: inline !important;
+	}
+
+	/* Prevent splitting elements across page boundaries */
+	article,
+	.project-card,
+	.experience-item,
+	li,
+	.infra-diagram-svg,
+	.facts-panel {
+		break-inside: avoid !important;
+		page-break-inside: avoid !important;
+	}
+
+	h1 {
+		font-size: 1.4rem !important;
+		line-height: 1.2 !important;
+	}
+
+	h2 {
+		font-size: 1.1rem !important;
+		line-height: 1.2 !important;
+		margin-bottom: 0.4rem !important;
+		break-after: avoid !important;
+		page-break-after: avoid !important;
+	}
+
+	h3 {
+		font-size: 0.95rem !important;
+		line-height: 1.2 !important;
+		break-after: avoid !important;
+		page-break-after: avoid !important;
+	}
+
+	/* Controlled clean page breaks */
+	#skills {
+		break-after: page !important;
+		page-break-after: always !important;
+		margin-bottom: 0 !important;
+	}
+
+	#experience {
+		break-after: page !important;
+		page-break-after: always !important;
+		margin-bottom: 0 !important;
+	}
+
+	/* Compact section margins for print */
+	.mb-16 {
+		margin-bottom: 0.75rem !important;
+	}
+
+	.mb-14 {
+		margin-bottom: 0.6rem !important;
+	}
+
+	/* Header spacing */
+	.cv-main > section:first-of-type {
+		margin-bottom: 0.75rem !important;
+		gap: 0.75rem !important;
+	}
+
+	/* Skills badges in print */
+	#skills .flex {
+		gap: 0.35rem !important;
+	}
+
+	#skills span {
+		padding: 0.15rem 0.55rem !important;
+		font-size: 8pt !important;
+		line-height: 1.2 !important;
+		border-radius: 9999px !important;
+	}
+
+	/* Experience list spacing */
+	#experience ol {
+		border-left-width: 1.5px !important;
+		padding-left: 0.75rem !important;
+	}
+
+	#experience ol > li + li {
+		margin-top: 0.65rem !important;
+	}
+
+	#experience ul {
+		margin-top: 0.2rem !important;
+		padding-left: 1rem !important;
+	}
+
+	#experience ul li {
+		margin-top: 0.1rem !important;
+		font-size: 8.5pt !important;
+		line-height: 1.3 !important;
+	}
+
+	/* Cards and badges in print: pure white surface, clean crisp borders */
+	article,
+	.bg-surface {
+		background: #ffffff !important;
+		background-color: #ffffff !important;
+		border: 1px solid #cbd5e1 !important;
+		box-shadow: none !important;
+	}
+
+	/* Project cards in print */
+	.project-card {
+		padding: 0.6rem 0.85rem !important;
+		margin-bottom: 0.6rem !important;
+		border-radius: 0.5rem !important;
+	}
+
+	.project-card p {
+		font-size: 8pt !important;
+		line-height: 1.3 !important;
+		margin-top: 0.2rem !important;
+	}
+
+	.project-card .mt-4 {
+		margin-top: 0.35rem !important;
+	}
+
+	.project-card .mt-3 {
+		margin-top: 0.25rem !important;
+	}
+
+	/* Diagram size in print */
+	.infra-diagram-svg {
+		max-height: 68px !important;
+	}
+
+	/* FactsPanel layout in print */
+	.facts-panel {
+		display: grid !important;
+		grid-template-columns: 1fr 1fr !important;
+		gap: 0.6rem 1.5rem !important;
+		margin-top: 0.75rem !important;
+		font-size: 8.5pt !important;
+	}
+
+	.facts-panel h2 {
+		font-size: 8.5pt !important;
+		margin-bottom: 0.2rem !important;
+	}
+
+	.facts-panel dl > div {
+		font-size: 8pt !important;
+	}
+
+	.facts-panel ul {
+		font-size: 8pt !important;
+	}
+
+	.facts-panel > * {
+		margin-top: 0 !important;
+	}
+
+	footer {
+		margin-top: 0.6rem !important;
+		padding-top: 0.4rem !important;
+		border-top: 1px solid #cbd5e1 !important;
+		font-size: 7pt !important;
 	}
 }

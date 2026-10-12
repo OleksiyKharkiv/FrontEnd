@@ -8,6 +8,8 @@
 	import { navState, sections } from '$lib/navState.svelte';
 	import photo from '$lib/assets/photo.jpg';
 
+	const skills = $derived(m.skills_items().split(' · '));
+
 	const experience = $derived([
 		{
 			role: m.exp1_role(),
@@ -92,11 +94,22 @@
 			<p class="mono text-text-dim mt-3 text-sm italic">{m.summary_quip()}</p>
 		</section>
 
+		<section id="skills" class="scroll-target mb-16">
+			<h2 class="font-display text-text mb-4 text-2xl font-700">{m.skills_title()}</h2>
+			<div class="flex flex-wrap gap-2">
+				{#each skills as skill (skill)}
+					<span class="border-border bg-surface text-text rounded-full border px-3 py-1 text-sm font-500">
+						{skill}
+					</span>
+				{/each}
+			</div>
+		</section>
+
 		<section id="experience" class="scroll-target mb-16">
 			<h2 class="font-display text-text mb-4 text-2xl font-700">{m.experience_title()}</h2>
 			<ol class="border-border space-y-8 border-l pl-5">
 				{#each experience as job (job.role + job.meta)}
-					<li>
+					<li class="experience-item">
 						<h3 class="font-display text-text font-600">{job.role}</h3>
 						<p class="text-text-dim text-sm">{job.meta}</p>
 						<ul class="text-text mt-2 space-y-1 pl-4 leading-relaxed">
@@ -112,7 +125,7 @@
 		<section id="projects" class="scroll-target mb-16">
 			<h2 class="font-display text-text mb-4 text-2xl font-700">{m.projects_title()}</h2>
 
-			<article class="border-border bg-surface mb-6 rounded-xl border p-5">
+			<article class="project-card border-border bg-surface mb-6 rounded-xl border p-5">
 				<h3 class="font-display text-text font-600">{m.proj_numi_title()}</h3>
 				<p class="text-text-dim text-sm">{m.proj_numi_meta()}</p>
 				<p class="text-text-dim mt-2 leading-relaxed">{m.proj_numi_body()}</p>
@@ -130,7 +143,7 @@
 				</div>
 			</article>
 
-			<article class="border-border bg-surface rounded-xl border p-5">
+			<article class="project-card border-border bg-surface rounded-xl border p-5">
 				<h3 class="font-display text-text font-600">{m.proj_lr_title()}</h3>
 				<p class="text-text-dim text-sm">{m.proj_lr_meta()}</p>
 				<p class="text-text-dim mt-2 leading-relaxed">{m.proj_lr_body()}</p>

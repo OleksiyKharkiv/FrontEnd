@@ -10,13 +10,14 @@
 
 	const labels: Record<string, () => string> = {
 		nav_about: m.nav_about,
+		nav_skills: m.nav_skills,
 		nav_experience: m.nav_experience,
 		nav_projects: m.nav_projects
 	};
 </script>
 
 {#if variant === 'rail'}
-	<nav aria-label={m.nav_about() + ', ' + m.nav_experience() + ', ' + m.nav_projects()} class="flex flex-col gap-1">
+	<nav aria-label="{m.nav_about()}, {m.nav_skills()}, {m.nav_experience()}, {m.nav_projects()}" class="flex flex-col gap-1">
 		{#each sections as section (section.id)}
 			<a
 				href="#{section.id}"
@@ -30,7 +31,7 @@
 		{/each}
 	</nav>
 {:else}
-	<nav aria-label={m.nav_about() + ', ' + m.nav_experience() + ', ' + m.nav_projects()} class="flex gap-2 overflow-x-auto">
+	<nav aria-label="{m.nav_about()}, {m.nav_skills()}, {m.nav_experience()}, {m.nav_projects()}" class="flex gap-2 overflow-x-auto">
 		{#each sections as section (section.id)}
 			<a
 				href="#{section.id}"

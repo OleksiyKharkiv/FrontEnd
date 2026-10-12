@@ -5,6 +5,7 @@ export const navState = $state({ active: 'about' });
 
 export const sections = [
 	{ id: 'about', labelKey: 'nav_about' },
+	{ id: 'skills', labelKey: 'nav_skills' },
 	{ id: 'experience', labelKey: 'nav_experience' },
 	{ id: 'projects', labelKey: 'nav_projects' }
 ] as const;
