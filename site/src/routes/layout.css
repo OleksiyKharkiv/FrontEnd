@@ -203,4 +203,7 @@ html {
 	.no-print {
 		display: none !important;
 	}
+	.cv-facts-mobile {
+		display: block !important;
+	}
 }

@@ -1,5 +1,7 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import * as m from '$lib/paraglide/messages';
+	import { getLocale } from '$lib/paraglide/runtime';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import LangSwitch from '$lib/components/LangSwitch.svelte';
 	import favicon from '$lib/assets/favicon.svg';
@@ -7,9 +9,17 @@
 
 	let { children } = $props();
 
-	function printPage() {
-		window.print();
-	}
+	const pdfHref = $derived(
+		getLocale() === 'de'
+			? `${base}/Lebenslauf_Oleksiy_Khudoshyn.pdf`
+			: `${base}/CV_Oleksiy_Khudoshyn_EN.pdf`
+	);
+
+	const pdfDownloadName = $derived(
+		getLocale() === 'de'
+			? 'Lebenslauf_Oleksiy_Khudoshyn.pdf'
+			: 'CV_Oleksiy_Khudoshyn_EN.pdf'
+	);
 </script>
 
 <svelte:head>
@@ -24,13 +34,16 @@
 	>
 		<span class="font-display text-text text-sm font-600">Oleksiy Khudoshyn</span>
 		<div class="flex items-center gap-3">
-			<button
-				type="button"
-				class="border-border text-text-dim hover:text-text hover:border-accent rounded-full border px-3 py-1 text-xs transition-colors"
-				onclick={printPage}
+			<a
+				href={pdfHref}
+				download={pdfDownloadName}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="border-border text-text-dim hover:text-text hover:border-accent rounded-full border px-3 py-1 text-xs transition-colors inline-flex items-center gap-1"
+				title={m.print_button()}
 			>
 				{m.print_button()}
-			</button>
+			</a>
 			<LangSwitch />
 			<ThemeToggle />
 		</div>
